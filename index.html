@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Live event dashboards with real-time attendee tracking. Connect Google Forms to dynamic counters and organizer dashboards for your events.">
+    <meta name="keywords" content="event management, attendee counter, Google Forms integration, live dashboard, sports clubs, event tracking">
+    <meta name="author" content="IzuTech">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="IzuTech Events - Live Event Dashboards & Attendee Tracking">
+    <meta property="og:description" content="Real-time event management with live attendee counters, organizer dashboards, and Google Forms integration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://events.izutech.fr">
+    <meta property="og:image" content="https://events.izutech.fr/photo/event-dashboard-preview.png">
+    
+    <title>IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking</title>
+    
+    <!-- Preload resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="https://web.izutech.fr" class="nav-logo">
+                <img src="photo/izutech-logo.png" alt="IzuTech Events" width="160" height="40">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#features" class="nav-link" data-i18n="nav.features">Features</a></li>
+                <li class="nav-item"><a href="#how-it-works" class="nav-link" data-i18n="nav.howItWorks">How It Works</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                <li class="nav-item">
+                    <select id="language-selector" class="language-selector">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">Live Event Dashboards & Real-time Attendee Tracking</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Transform your Google Forms into powerful event management systems with live counters, organizer dashboards, and real-time analytics.</p>
+                <div class="cta-container">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Get Your Event Dashboard</a>
+                    <a href="#how-it-works" class="btn btn-secondary" data-i18n="hero.demo">See Live Demo</a>
+                </div>
+                
+                <!-- Live Counter Demo -->
+                <div class="counter-demo">
+                    <div class="counter-card">
+                        <div class="counter-label" data-i18n="hero.counterLabel">Current Attendees</div>
+                        <div class="counter-number" id="liveCounter">127</div>
+                        <div class="counter-target" data-i18n="hero.counterTarget">Target: 200 participants</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section class="clients">
+        <div class="container">
+            <h2 class="section-title" data-i18n="clients.title">Perfect For</h2>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <div class="client-icon">🏀</div>
+                    <h3 data-i18n="clients.sports">Sports Clubs</h3>
+                    <p data-i18n="clients.sportsDesc">Tournaments, tryouts, and club events</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-icon">🎓</div>
+                    <h3 data-i18n="clients.schools">Schools & Universities</h3>
+                    <p data-i18n="clients.schoolsDesc">Open days, workshops, student events</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-icon">🏢</div>
+                    <h3 data-i18n="clients.businesses">Businesses</h3>
+                    <p data-i18n="clients.businessesDesc">Corporate events, seminars, team building</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-icon">🎪</div>
+                    <h3 data-i18n="clients.associations">Associations</h3>
+                    <p data-i18n="clients.associationsDesc">Community events, festivals, gatherings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="features.title">Powerful Event Management Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔢</div>
+                    <h3 data-i18n="features.liveCounter.title">Live Attendee Counter</h3>
+                    <p data-i18n="features.liveCounter.description">Real-time counter that updates automatically as people register through your Google Form.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-i18n="features.organizerDashboard.title">Organizer Dashboard</h3>
+                    <p data-i18n="features.organizerDashboard.description">Private dashboard with detailed analytics: age groups, attendance ratios, progress toward goals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 data-i18n="features.automaticSync.title">Automatic Google Forms Sync</h3>
+                    <p data-i18n="features.automaticSync.description">Seamlessly connects to your existing Google Forms - no data migration needed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 data-i18n="features.goalTracking.title">Goal Tracking</h3>
+                    <p data-i18n="features.goalTracking.description">Set participant targets and track progress with visual progress bars.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 data-i18n="features.demographics.title">Demographic Insights</h3>
+                    <p data-i18n="features.demographics.description">Auto-calculated ratios (adults/children, member types, age groups).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 data-i18n="features.mobileReady.title">Mobile-Friendly</h3>
+                    <p data-i18n="features.mobileReady.description">Access your dashboard from any device, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="process">
+        <div class="container">
+            <h2 class="section-title" data-i18n="process.title">How It Works in 3 Simple Steps</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 data-i18n="process.step1.title">Share Your Google Form</h3>
+                    <p data-i18n="process.step1.description">Provide us with your existing Google Form link - or we can help you create one.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 data-i18n="process.step2.title">We Set Up Your Dashboard</h3>
+                    <p data-i18n="process.step2.description">We connect your form to a custom dashboard and live counter within 24-48 hours.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 data-i18n="process.step3.title">Promote & Monitor</h3>
+                    <p data-i18n="process.step3.description">Share your event page and watch registrations come in live!</p>
+                </div>
+            </div>
+            
+            <!-- Integration Demo -->
+            <div class="integration-demo">
+                <div class="demo-card">
+                    <h3 data-i18n="demo.title">Live Integration Example</h3>
+                    <div class="demo-grid">
+                        <div class="demo-item">
+                            <h4 data-i18n="demo.googleForms">Google Forms</h4>
+                            <div class="demo-placeholder">📝 Registration Form</div>
+                        </div>
+                        <div class="demo-arrow">→</div>
+                        <div class="demo-item">
+                            <h4 data-i18n="demo.liveCounter">Live Counter</h4>
+                            <div class="counter-preview">
+                                <div class="preview-number">127</div>
+                                <div data-i18n="demo.attendees">Attendees</div>
+                            </div>
+                        </div>
+                        <div class="demo-arrow">→</div>
+                        <div class="demo-item">
+                            <h4 data-i18n="demo.organizerView">Organizer Dashboard</h4>
+                            <div class="demo-placeholder">📊 Analytics & Insights</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title" data-i18n="pricing.title">Simple Event Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-i18n="pricing.mostPopular">Most Popular</div>
+                    <h3 data-i18n="pricing.singleEvent.title">Single Event Package</h3>
+                    <div class="price">€290</div>
+                    <p class="price-description" data-i18n="pricing.singleEvent.description">One-time setup</p>
+                    
+                    <ul class="features-list">
+                        <li data-i18n="pricing.singleEvent.features.0">Live attendee counter</li>
+                        <li data-i18n="pricing.singleEvent.features.1">Organizer dashboard</li>
+                        <li data-i18n="pricing.singleEvent.features.2">Google Forms integration</li>
+                        <li data-i18n="pricing.singleEvent.features.3">Goal tracking & progress bars</li>
+                        <li data-i18n="pricing.singleEvent.features.4">Demographic analytics</li>
+                        <li data-i18n="pricing.singleEvent.features.5">3 months of support</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-primary" data-i18n="pricing.cta">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 data-i18n="pricing.ongoing.title">Club/Organization Package</h3>
+                    <div class="price">€490</div>
+                    <p class="price-description" data-i18n="pricing.ongoing.description">Annual package</p>
+                    
+                    <ul class="features-list">
+                        <li data-i18n="pricing.ongoing.features.0">Everything in Single Event</li>
+                        <li data-i18n="pricing.ongoing.features.1">Multiple events management</li>
+                        <li data-i18n="pricing.ongoing.features.2">Custom branding</li>
+                        <li data-i18n="pricing.ongoing.features.3">Advanced analytics</li>
+                        <li data-i18n="pricing.ongoing.features.4">1 year of support & updates</li>
+                        <li data-i18n="pricing.ongoing.features.5">Priority setup (24h)</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-secondary" data-i18n="pricing.cta">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Ready for Live Event Management?</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 data-i18n="contact.getInTouch">Get Started Today</h3>
+                    <p data-i18n="contact.description">Have an upcoming event? Let's set up your live dashboard in time for your promotions.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">⚡</div>
+                            <span data-i18n="contact.fastSetup">24-48h setup time</span>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <span data-i18n="contact.responseTime">Response within 12 hours</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="event-lead-form" action="https://formspree.io/f/YOUR_EVENT_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.form.name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.form.email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization" data-i18n="contact.form.organization">Organization/Club</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="event-type" data-i18n="contact.form.eventType">Event Type</label>
+                            <select id="event-type" name="event-type">
+                                <option value="" data-i18n="contact.form.selectOption">Select an option</option>
+                                <option value="sports" data-i18n="contact.form.sportsEvent">Sports Tournament/Event</option>
+                                <option value="school" data-i18n="contact.form.schoolEvent">School/University Event</option>
+                                <option value="business" data-i18n="contact.form.businessEvent">Corporate/Business Event</option>
+                                <option value="community" data-i18n="contact.form.communityEvent">Community/Association Event</option>
+                                <option value="other" data-i18n="contact.form.otherEvent">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-date" data-i18n="contact.form.eventDate">Event Date (if known)</label>
+                            <input type="date" id="event-date" name="event-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.form.message">Tell us about your event *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Number of expected attendees, current registration method, specific needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Get My Event Dashboard</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 data-i18n="faq.q1">Do I need to change my current registration process?</h3>
+                    <p data-i18n="faq.a1">No! We integrate with your existing Google Form. Participants continue registering the same way.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-i18n="faq.q2">How quickly can you set this up?</h3>
+                    <p data-i18n="faq.a2">Most dashboards are live within 24-48 hours after we receive your Google Form link.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-i18n="faq.q3">Can I use this with my existing website?</h3>
+                    <p data-i18n="faq.a3">Absolutely! We provide embed codes for the counter and links to the dashboard that work with any website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="photo/izutech-logo.png" alt="IzuTech Events" width="120" height="30">
+                </div>
+                <p data-i18n="footer.copyright">© 2025 IzuTech Events. All rights reserved.</p>
+                <p><a href="https://web.izutech.fr" style="color: rgba(255,255,255,0.7);" data-i18n="footer.websiteServices">Website Development Services</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
