@@ -14,6 +14,16 @@
     <meta property="og:url" content="https://events.izutech.fr">
     <meta property="og:image" content="https://events.izutech.fr/photo/event-dashboard-preview.png">
     
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking">
+    <meta name="twitter:description" content="Real-time event management with live attendee counters and organizer dashboards.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="photo/IzuTech-logo.png">
+    <link rel="apple-touch-icon" href="photo/IzuTech-logo.png">
+    <link rel="icon" type="image/x-icon" href="photo/IzuTech-logo.ico">
+    
     <title>IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking</title>
     
     <!-- Preload resources -->
@@ -23,29 +33,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <a href="https://web.izutech.fr" class="nav-logo">
-                <img src="photo/izutech-logo.png" alt="IzuTech Events" width="160" height="40">
+                <img src="photo/IzuTech-logo.png" alt="IzuTech Events" width="160" height="40">
             </a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#features" class="nav-link" data-i18n="nav.features">Features</a></li>
-                <li class="nav-item"><a href="#how-it-works" class="nav-link" data-i18n="nav.howItWorks">How It Works</a></li>
-                <li class="nav-item"><a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
-                <li class="nav-item">
-                    <select id="language-selector" class="language-selector">
+            <ul class="nav-menu" role="menubar">
+                <li class="nav-item" role="none"><a href="#features" class="nav-link" role="menuitem" data-i18n="nav.features">Features</a></li>
+                <li class="nav-item" role="none"><a href="#how-it-works" class="nav-link" role="menuitem" data-i18n="nav.howItWorks">How It Works</a></li>
+                <li class="nav-item" role="none"><a href="#pricing" class="nav-link" role="menuitem" data-i18n="nav.pricing">Pricing</a></li>
+                <li class="nav-item" role="none"><a href="#contact" class="nav-link" role="menuitem" data-i18n="nav.contact">Contact</a></li>
+                <li class="nav-item" role="none">
+                    <select id="language-selector" class="language-selector" aria-label="Select language">
                         <option value="en">English</option>
                         <option value="fr">Français</option>
                     </select>
                 </li>
             </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="main-content">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title" data-i18n="hero.title">Live Event Dashboards & Real-time Attendee Tracking</h1>
@@ -311,11 +329,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="photo/izutech-logo.png" alt="IzuTech Events" width="120" height="30">
+                    <img src="photo/IzuTech-logo.png" alt="IzuTech Events" width="120" height="30">
                 </div>
                 <p data-i18n="footer.copyright">© 2025 IzuTech Events. All rights reserved.</p>
                 <p><a href="https://web.izutech.fr" style="color: rgba(255,255,255,0.7);" data-i18n="footer.websiteServices">Website Development Services</a></p>
