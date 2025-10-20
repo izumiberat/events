@@ -1123,45 +1123,138 @@ h2 {
 .footer {
     background: var(--primary-dark);
     color: white;
-    padding: 4rem 0 3rem;
+    position: relative;
+}
+
+/* Footer Business Ecosystem */
+.footer-businesses {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #1a365d 100%);
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section-title {
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+.businesses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-logo img {
-    height: 100px;
+.business-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+}
+
+.business-card:focus-within {
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+}
+
+.business-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    border-color: var(--primary-blue);
+}
+
+.business-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.business-card h5 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.business-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.business-link {
+    color: var(--primary-accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.business-link:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Main Footer Content */
+.footer-brand-centered {
+    background: var(--primary-dark);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-brand-centered .footer-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-brand-centered .footer-logo img {
+    height: 60px;
     width: auto;
     opacity: 0.9;
     transition: var(--transition);
 }
 
-.footer-logo:hover img {
+.footer-brand-centered .footer-logo:hover img {
     opacity: 1;
     transform: scale(1.05);
 }
 
-.footer p {
-    margin: 0;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.8);
+.footer-brand-centered .footer-tagline {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
     max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.footer a {
+.footer-legal {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.5rem;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-privacy {
     color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-.footer a:hover {
-    color: white;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /* ===== Mobile Responsive Design ===== */
@@ -1308,6 +1401,42 @@ h2 {
     
     .contact-form-and-trust.active .trust-section {
         display: none !important;
+    }
+    /* Footer mobile styles */
+    .footer-businesses {
+        padding: 2rem 0;
+    }
+    
+    .businesses-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .business-card {
+        padding: 1.25rem;
+    }
+    
+    .footer-brand-centered {
+        padding: 2.5rem 0;
+    }
+    
+    .footer-brand-centered .footer-logo img {
+        height: 50px;
+    }
+    
+    .footer-brand-centered .footer-tagline {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .footer-legal {
+        padding-top: 1.25rem;
+    }
+    
+    .footer-copyright,
+    .footer-privacy {
+        padding: 0 1rem;
     }
 }
 
