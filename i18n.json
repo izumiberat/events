@@ -191,8 +191,21 @@
       "a3": "None whatsoever! We handle all the technical setup. You just share your form link and start monitoring registrations."
     },
     "footer": {
-      "copyright": "© 2025 IzuTech Events. All rights reserved.",
-      "websiteServices": "Website Development Services"
+      "businesses": {
+        "title": "Discover Our Ecosystem",
+        "cta": "Explore →",
+        "ai": {
+          "title": "AI Solutions",
+          "description": "Practical AI automation for your business"
+        },
+        "web": {
+          "title": "Professional Websites",
+          "description": "Custom digital solutions for SMBs"
+        }
+      },
+      "tagline": "Accelerating Business Digital Transformation with AI",
+      "copyright": "© 2025 IzuTech. All rights reserved.",
+      "privacy": "Your data is processed in compliance with GDPR and secured."
     }
   },
   "fr": {
@@ -387,8 +400,21 @@
       "a3": "Absolument ! Nous fournissons des codes d'intégration pour le compteur et des liens vers le tableau de bord qui fonctionnent avec n'importe quel site web."
     },
     "footer": {
-      "copyright": "© 2025 IzuTech Events. Tous droits réservés.",
-      "websiteServices": "Services de Développement Web"
+      "businesses": {
+        "title": "Découvrez Notre Écosystème",
+        "cta": "Explorer →",
+        "ai": {
+          "title": "Solutions IA",
+          "description": "Automatisation IA pratique pour votre entreprise"
+        },
+        "web": {
+          "title": "Sites Web Professionnels",
+          "description": "Solutions digitales sur mesure pour TPE/PME"
+        }
+      },
+      "tagline": "Nous Accélérons la Transformation Digitale des Entreprises avec l'IA",
+      "copyright": "© 2025 IzuTech. Tous droits réservés.",
+      "privacy": "Vos données sont traitées en conformité avec le RGPD et sécurisées."
     }
   }
 }
