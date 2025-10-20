@@ -109,13 +109,59 @@
     },
     "contact": {
       "title": "Ready for Live Event Management?",
-      "getInTouch": "Get Started Today",
-      "description": "Have an upcoming event? Let's set up your live dashboard in time for your promotions.",
-      "fastSetup": "24-48h setup time",
-      "responseTime": "Response within 12 hours",
+      "trust": {
+        "title": "Why Event Organizers Choose IzuTech",
+        "points": [
+          {
+            "icon": "⚡",
+            "title": "Quick Setup",
+            "text": "Dashboard ready in 24-48 hours",
+            "mobileText": "24-48h setup"
+          },
+          {
+            "icon": "💰",
+            "title": "Transparent Pricing",
+            "text": "All-inclusive pricing from €290, no surprises",
+            "mobileText": "From €290"
+          },
+          {
+            "icon": "💬",
+            "title": "12h Response Time",
+            "text": "We get back to you within 12 hours",
+            "mobileText": "Fast reply"
+          },
+          {
+            "icon": "🔄",
+            "title": "Google Forms Integration",
+            "text": "Seamless integration with your existing forms",
+            "mobileText": "Auto integration"
+          }
+        ],
+        "guarantee": "Free Consultation & Quote"
+      },
+      "options": {
+        "form": {
+          "title": "Send event details",
+          "description": "Share your event needs and we'll provide a customized quote within 12 hours",
+          "button": "Fill out form"
+        },
+        "call": {
+          "title": "Quick consultation",
+          "description": "15-minute free call to discuss your event dashboard needs",
+          "button": "Book a call"
+        },
+        "email": {
+          "title": "Email directly",
+          "description": "Prefer email? Send us your event details and we'll respond quickly.",
+          "button": "events@izutech.fr"
+        }
+      },
       "form": {
+        "title": "Tell us about your event",
+        "back": "← Back to options",
         "name": "Name *",
         "email": "Email *",
+        "phone": "Phone Number (Optional)",
         "organization": "Organization/Club",
         "eventType": "Event Type",
         "selectOption": "Select an option",
@@ -124,9 +170,13 @@
         "businessEvent": "Corporate/Business Event",
         "communityEvent": "Community/Association Event",
         "otherEvent": "Other",
-        "eventDate": "Event Date (if known)",
         "message": "Tell us about your event *",
         "submit": "Get My Event Dashboard"
+      },
+      "success": {
+        "title": "Request Sent Successfully!",
+        "message": "Thank you for your inquiry. We'll review your event details and get back to you within 12 hours to discuss your dashboard setup.",
+        "button": "Send Another Request"
       }
     },
     "faq": {
@@ -253,24 +303,74 @@
     },
     "contact": {
       "title": "Prêt pour la Gestion d'Événements en Direct ?",
-      "getInTouch": "Commencez Aujourd'hui",
-      "description": "Avez-vous un événement à venir ? Mettons en place votre tableau de bord en direct à temps pour vos promotions.",
-      "fastSetup": "Configuration en 24-48h",
-      "responseTime": "Réponse sous 12 heures",
+      "trust": {
+        "title": "Pourquoi les Organisateurs Choisissent IzuTech",
+        "points": [
+          {
+            "icon": "⚡",
+            "title": "Configuration Rapide",
+            "text": "Tableau de bord prêt en 24-48 heures",
+            "mobileText": "Configuration 24-48h"
+          },
+          {
+            "icon": "💰",
+            "title": "Tarification Transparente",
+            "text": "Tarif tout compris à partir de 290€, sans surprises",
+            "mobileText": "À partir de 290€"
+          },
+          {
+            "icon": "💬",
+            "title": "Réponse sous 12h",
+            "text": "Nous vous répondons dans les 12 heures",
+            "mobileText": "Réponse rapide"
+          },
+          {
+            "icon": "🔄",
+            "title": "Intégration Google Forms",
+            "text": "Intégration transparente avec vos formulaires existants",
+            "mobileText": "Intégration auto"
+          }
+        ],
+        "guarantee": "Consultation Gratuite & Devis"
+      },
+      "options": {
+        "form": {
+          "title": "Envoyer les détails de l'événement",
+          "description": "Partagez vos besoins et nous vous enverrons un devis personnalisé sous 12 heures",
+          "button": "Remplir le formulaire"
+        },
+        "call": {
+          "title": "Consultation rapide",
+          "description": "Appel gratuit de 15 minutes pour discuter de vos besoins en tableau de bord d'événement",
+          "button": "Réserver un appel"
+        },
+        "email": {
+          "title": "Email direct",
+          "description": "Vous préférez l'email ? Envoyez-nous vos détails d'événement et nous répondrons rapidement.",
+          "button": "events@izutech.fr"
+        }
+      },
       "form": {
+        "title": "Parlez-nous de votre événement",
+        "back": "← Retour aux options",
         "name": "Nom *",
         "email": "Email *",
+        "phone": "Numéro de téléphone (Optionnel)",
         "organization": "Organisation/Club",
-        "eventType": "Type d'Événement",
+        "eventType": "Type d'événement",
         "selectOption": "Sélectionnez une option",
         "sportsEvent": "Tournoi/Événement Sportif",
         "schoolEvent": "Événement Scolaire/Universitaire",
         "businessEvent": "Événement Corporatif/Entreprise",
         "communityEvent": "Événement Communautaire/Association",
         "otherEvent": "Autre",
-        "eventDate": "Date de l'Événement (si connue)",
         "message": "Parlez-nous de votre événement *",
         "submit": "Obtenir Mon Tableau de Bord"
+      },
+      "success": {
+        "title": "Demande Envoyée avec Succès !",
+        "message": "Merci pour votre demande. Nous examinerons les détails de votre événement et vous recontacterons dans les 12 heures pour discuter de la configuration de votre tableau de bord.",
+        "button": "Envoyer une Autre Demande"
       }
     },
     "faq": {
