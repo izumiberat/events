@@ -310,6 +310,64 @@ document.addEventListener('DOMContentLoaded', function() {
         return emailRegex.test(email);
     }
 
+    // Conversion tracking and optimization
+    function initConversionTracking() {
+        // Track Calendly link clicks
+        const calendlyLinks = document.querySelectorAll('a[href*="calendly.com"]');
+        
+        calendlyLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Add loading state
+                const btnText = this.querySelector('.btn-text');
+                if (btnText) {
+                    const originalText = btnText.textContent;
+                    btnText.textContent = 'Opening...';
+                    
+                    // Reset text after a delay
+                    setTimeout(() => {
+                        btnText.textContent = originalText;
+                    }, 2000);
+                }
+                
+                // Track conversion event
+                trackConversion('calendly_click', {
+                    button_location: this.closest('.cta-container') ? 'hero' : 
+                                   this.closest('.contact-option-card') ? 'contact_option' : 'other',
+                    text: this.textContent.trim()
+                });
+            });
+        });
+        
+        // Add trust indicators to Calendly links in hero
+        const heroCalendlyLink = document.querySelector('.hero a[href*="calendly.com"]');
+        if (heroCalendlyLink) {
+            const trustIndicator = document.createElement('div');
+            trustIndicator.className = 'calendly-trust';
+            trustIndicator.innerHTML = `
+                <span>✅ No credit card required</span>
+                <span>•</span>
+                <span>🎯 15-minute call</span>
+            `;
+            heroCalendlyLink.parentNode.insertBefore(trustIndicator, heroCalendlyLink.nextSibling);
+        }
+    }
+
+    // Track conversion events
+    function trackConversion(event, data = {}) {
+        // Here you can integrate with Google Analytics, Facebook Pixel, etc.
+        console.log('Conversion event:', event, data);
+        
+        // Example: Google Analytics event tracking
+        if (typeof gtag !== 'undefined') {
+            gtag('event', event, data);
+        }
+        
+        // Example: Facebook Pixel
+        if (typeof fbq !== 'undefined') {
+            fbq('track', event, data);
+        }
+    }
+
     // Live counter animation for demo
     function animateCounter() {
         const counter = document.getElementById('liveCounter');
@@ -346,6 +404,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initLanguage();
     initContactSection();
     initContactForm();
+    initConversionTracking();
 
     // Start counter animation after a short delay
     setTimeout(animateCounter, 1000);
