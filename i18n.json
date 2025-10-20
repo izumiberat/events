@@ -13,10 +13,13 @@
     "hero": {
       "title": "Live Event Dashboards & Real-time Attendee Tracking",
       "subtitle": "Transform your Google Forms into powerful event management systems with live counters, organizer dashboards, and real-time analytics.",
-      "cta": "Get Your Event Dashboard",
+      "cta": "Book Free Consultation",
       "demo": "See Live Demo",
       "counterLabel": "Current Attendees",
-      "counterTarget": "Target: 200 participants"
+      "counterTarget": "Target: 200 participants",
+      "trustBadge1": "🚀 24-48h Setup",
+      "trustBadge2": "✅ Free Consultation",
+      "trustBadge3": "💬 12h Response"
     },
     "clients": {
       "title": "Perfect For",
@@ -146,9 +149,9 @@
           "button": "Fill out form"
         },
         "call": {
-          "title": "Quick consultation",
-          "description": "15-minute free call to discuss your event dashboard needs",
-          "button": "Book a call"
+          "title": "Quick 15-min Consultation",
+          "description": "Free strategy call to discuss your event dashboard needs and get personalized recommendations",
+          "button": "Book Free Consultation"
         },
         "email": {
           "title": "Email directly",
@@ -207,10 +210,13 @@
     "hero": {
       "title": "Tableaux de Bord d'Événements & Suivi des Participants en Temps Réel",
       "subtitle": "Transformez vos Google Forms en systèmes de gestion d'événements puissants avec compteurs en direct, tableaux de bord organisateurs et analyses en temps réel.",
-      "cta": "Obtenir Votre Tableau de Bord",
+      "cta": "Réserver Consultation Gratuite",
       "demo": "Voir la Démo Live",
       "counterLabel": "Participants Actuels",
-      "counterTarget": "Objectif : 200 participants"
+      "counterTarget": "Objectif : 200 participants",
+      "trustBadge1": "🚀 Configuration 24-48h",
+      "trustBadge2": "✅ Consultation Gratuite",
+      "trustBadge3": "💬 Réponse 12h"
     },
     "clients": {
       "title": "Parfait Pour",
@@ -340,9 +346,9 @@
           "button": "Remplir le formulaire"
         },
         "call": {
-          "title": "Consultation rapide",
-          "description": "Appel gratuit de 15 minutes pour discuter de vos besoins en tableau de bord d'événement",
-          "button": "Réserver un appel"
+          "title": "Consultation Rapide 15 min",
+          "description": "Appel stratégique gratuit pour discuter de vos besoins en tableau de bord d'événement et obtenir des recommandations personnalisées",
+          "button": "Réserver Consultation Gratuite"
         },
         "email": {
           "title": "Email direct",
