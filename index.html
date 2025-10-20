@@ -251,57 +251,187 @@
         <div class="container">
             <h2 class="section-title" data-i18n="contact.title">Ready for Live Event Management?</h2>
             <div class="contact-grid">
-                <div class="contact-info">
-                    <h3 data-i18n="contact.getInTouch">Get Started Today</h3>
-                    <p data-i18n="contact.description">Have an upcoming event? Let's set up your live dashboard in time for your promotions.</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="method-icon">⚡</div>
-                            <span data-i18n="contact.fastSetup">24-48h setup time</span>
+                <!-- Trust Section - Mobile First -->
+                <div class="trust-section-mobile">
+                    <h3 data-i18n="contact.trust.title">Why Event Organizers Choose IzuTech</h3>
+                    <div class="trust-points-mobile">
+                        <div class="trust-point-mobile">
+                            <div class="trust-icon">⚡</div>
+                            <h4 data-i18n="contact.trust.points.0.title">Quick Setup</h4>
+                            <p data-i18n="contact.trust.points.0.mobileText">24-48h setup</p>
                         </div>
-                        <div class="contact-method">
-                            <div class="method-icon">💬</div>
-                            <span data-i18n="contact.responseTime">Response within 12 hours</span>
+                        <div class="trust-point-mobile">
+                            <div class="trust-icon">💰</div>
+                            <h4 data-i18n="contact.trust.points.1.title">Transparent Pricing</h4>
+                            <p data-i18n="contact.trust.points.1.mobileText">From €290</p>
+                        </div>
+                        <div class="trust-point-mobile">
+                            <div class="trust-icon">💬</div>
+                            <h4 data-i18n="contact.trust.points.2.title">12h Response</h4>
+                            <p data-i18n="contact.trust.points.2.mobileText">Fast reply</p>
+                        </div>
+                        <div class="trust-point-mobile">
+                            <div class="trust-icon">🔄</div>
+                            <h4 data-i18n="contact.trust.points.3.title">Google Forms Sync</h4>
+                            <p data-i18n="contact.trust.points.3.mobileText">Auto integration</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="contact-form">
-                    <form id="event-lead-form" action="https://formspree.io/f/mgvndjvo" method="POST">
-                        <div class="form-group">
-                            <label for="name" data-i18n="contact.form.name">Name *</label>
-                            <input type="text" id="name" name="name" required>
+                <!-- Contact Options - Shows first on mobile -->
+                <div class="contact-options">
+                    <div class="contact-option-card">
+                        <div class="option-icon">📧</div>
+                        <h3 data-i18n="contact.options.form.title">Send event details</h3>
+                        <p data-i18n="contact.options.form.description">Share your event needs and we'll provide a customized quote within 12 hours</p>
+                        <div class="option-actions">
+                            <button class="btn btn-primary show-form-btn" data-i18n="contact.options.form.button">Fill out form</button>
                         </div>
-                        <div class="form-group">
-                            <label for="email" data-i18n="contact.form.email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="contact-option-card">
+                        <div class="option-icon">📞</div>
+                        <h3 data-i18n="contact.options.call.title">Quick consultation</h3>
+                        <p data-i18n="contact.options.call.description">15-minute free call to discuss your event dashboard needs</p>
+                        <div class="option-actions">
+                            <a href="https://calendly.com/izutech-fr/event-dashboard-consultation" target="_blank" class="btn btn-secondary" data-i18n="contact.options.call.button">Book a call</a>
                         </div>
-                        <div class="form-group">
-                            <label for="organization" data-i18n="contact.form.organization">Organization/Club</label>
-                            <input type="text" id="organization" name="organization">
+                    </div>
+                    
+                    <div class="contact-option-card">
+                        <div class="option-icon">✉️</div>
+                        <h3 data-i18n="contact.options.email.title">Email directly</h3>
+                        <p data-i18n="contact.options.email.description">Prefer email? Send us your event details and we'll respond quickly.</p>
+                        <div class="option-actions">
+                            <a href="mailto:events@izutech.fr" class="btn btn-card email-direct-btn">
+                                <span>events@izutech.fr</span>
+                            </a>
                         </div>
-                        <div class="form-group">
-                            <label for="event-type" data-i18n="contact.form.eventType">Event Type</label>
-                            <select id="event-type" name="event-type">
-                                <option value="" data-i18n="contact.form.selectOption">Select an option</option>
-                                <option value="sports" data-i18n="contact.form.sportsEvent">Sports Tournament/Event</option>
-                                <option value="school" data-i18n="contact.form.schoolEvent">School/University Event</option>
-                                <option value="business" data-i18n="contact.form.businessEvent">Corporate/Business Event</option>
-                                <option value="community" data-i18n="contact.form.communityEvent">Community/Association Event</option>
-                                <option value="other" data-i18n="contact.form.otherEvent">Other</option>
-                            </select>
+                    </div>
+                </div>
+    
+                <!-- Contact Form & Trust Section -->
+                <div class="contact-form-and-trust">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h3 data-i18n="contact.form.title">Tell us about your event</h3>
+                            <button class="back-to-options btn btn-text" data-i18n="contact.form.back">← Back to options</button>
                         </div>
-                        <div class="form-group">
-                            <label for="event-date" data-i18n="contact.form.eventDate">Event Date (if known)</label>
-                            <input type="date" id="event-date" name="event-date">
+                        
+                        <div class="contact-form">
+                            <form id="event-lead-form" action="https://formspree.io/f/mgvndjvo" method="POST">
+                                <div class="form-group">
+                                    <label for="name" data-i18n="contact.form.name">Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" data-i18n="contact.form.email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="phone" data-i18n="contact.form.phone">Phone Number (Optional)</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+33 1 23 45 67 89">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="organization" data-i18n="contact.form.organization">Organization/Club</label>
+                                    <input type="text" id="organization" name="organization" placeholder="Your organization name">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="event-type" data-i18n="contact.form.eventType">Event Type</label>
+                                    <select id="event-type" name="event-type">
+                                        <option value="" data-i18n="contact.form.selectOption">Select an option</option>
+                                        <option value="sports" data-i18n="contact.form.sportsEvent">Sports Tournament/Event</option>
+                                        <option value="school" data-i18n="contact.form.schoolEvent">School/University Event</option>
+                                        <option value="business" data-i18n="contact.form.businessEvent">Corporate/Business Event</option>
+                                        <option value="community" data-i18n="contact.form.communityEvent">Community/Association Event</option>
+                                        <option value="other" data-i18n="contact.form.otherEvent">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" data-i18n="contact.form.message">Tell us about your event *</label>
+                                    <textarea id="message" name="message" rows="4" required placeholder="Number of expected attendees, current registration method, specific needs..."></textarea>
+                                </div>
+                                
+                                <!-- Add-ons guidance -->
+                                <div class="addons-guidance">
+                                    <p><strong>Popular features to mention:</strong></p>
+                                    <div class="addons-tags">
+                                        <span class="addon-tag">Live Counter</span>
+                                        <span class="addon-tag">Organizer Dashboard</span>
+                                        <span class="addon-tag">Multiple Events</span>
+                                        <span class="addon-tag">Custom Branding</span>
+                                        <span class="addon-tag">Advanced Analytics</span>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">
+                                    <span class="btn-text">Get My Event Dashboard</span>
+                                    <span class="btn-loading" style="display: none;">Sending...</span>
+                                </button>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <label for="message" data-i18n="contact.form.message">Tell us about your event *</label>
-                            <textarea id="message" name="message" rows="4" required placeholder="Number of expected attendees, current registration method, specific needs..."></textarea>
+    
+                        <!-- Success Message -->
+                        <div id="form-success" class="form-success-message" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h3 data-i18n="contact.success.title">Request Sent Successfully!</h3>
+                            <p data-i18n="contact.success.message">Thank you for your inquiry. We'll review your event details and get back to you within 12 hours to discuss your dashboard setup.</p>
+                            <button onclick="resetEventForm()" class="btn btn-secondary" data-i18n="contact.success.button">Send Another Request</button>
                         </div>
-                        <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Get My Event Dashboard</button>
-                    </form>
+                    </div>
+    
+                    <!-- Trust Section - Desktop -->
+                    <div class="trust-section">
+                        <h3 data-i18n="contact.trust.title">Why Event Organizers Choose IzuTech</h3>
+                        
+                        <div class="trust-points">
+                            <div class="trust-point">
+                                <div class="trust-icon">⚡</div>
+                                <div class="trust-content">
+                                    <h4 data-i18n="contact.trust.points.0.title">Quick Setup</h4>
+                                    <p data-i18n="contact.trust.points.0.text">Dashboard ready in 24-48 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="trust-point">
+                                <div class="trust-icon">💰</div>
+                                <div class="trust-content">
+                                    <h4 data-i18n="contact.trust.points.1.title">Transparent Pricing</h4>
+                                    <p data-i18n="contact.trust.points.1.text">All-inclusive pricing from €290, no surprises</p>
+                                </div>
+                            </div>
+                            
+                            <div class="trust-point">
+                                <div class="trust-icon">💬</div>
+                                <div class="trust-content">
+                                    <h4 data-i18n="contact.trust.points.2.title">12h Response Time</h4>
+                                    <p data-i18n="contact.trust.points.2.text">We get back to you within 12 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="trust-point">
+                                <div class="trust-icon">🔄</div>
+                                <div class="trust-content">
+                                    <h4 data-i18n="contact.trust.points.3.title">Google Forms Integration</h4>
+                                    <p data-i18n="contact.trust.points.3.text">Seamless integration with your existing forms</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional trust element -->
+                        <div class="trust-footer">
+                            <div class="guarantee-badge">
+                                <span class="badge-icon">✅</span>
+                                <span class="badge-text" data-i18n="contact.trust.guarantee">Free Consultation & Quote</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
