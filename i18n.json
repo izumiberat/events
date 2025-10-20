@@ -78,7 +78,9 @@
       "googleForms": "Google Forms",
       "liveCounter": "Live Counter",
       "attendees": "Attendees",
-      "organizerView": "Organizer Dashboard"
+      "organizerView": "Organizer Dashboard",
+      "registrationForm": "📝 Registration Form",
+      "analyticsInsights": "📊 Analytics & Insights"
     },
     "pricing": {
       "title": "Simple Pricing, Powerful Results",
@@ -155,7 +157,8 @@
         "email": {
           "title": "Email directly",
           "description": "Prefer email? Send us your event details and we'll respond quickly.",
-          "button": "events@izutech.fr"
+          "button": "events@izutech.fr",
+          "trustBadges": "✅ No credit card required • 🎯 15-minute call"
         }
       },
       "form": {
@@ -165,6 +168,7 @@
         "email": "Email *",
         "phone": "Phone Number (Optional)",
         "organization": "Organization/Club",
+        "organizationPlaceholder": "Your organization name",
         "eventType": "Event Type",
         "selectOption": "Select an option",
         "sportsEvent": "Sports Tournament/Event",
@@ -173,7 +177,16 @@
         "communityEvent": "Community/Association Event",
         "otherEvent": "Other",
         "message": "Tell us about your event *",
-        "submit": "Get My Custom Quote"
+        "messagePlaceholder": "Number of expected attendees, current registration method, specific needs...",
+        "submit": "Get My Custom Quote",
+        "popularFeaturesTitle": "Popular features to mention:",
+        "features": {
+          "liveCounter": "Live Counter",
+          "organizerDashboard": "Organizer Dashboard",
+          "multipleEvents": "Multiple Events",
+          "customBranding": "Custom Branding",
+          "advancedAnalytics": "Advanced Analytics"
+        }
       },
       "success": {
         "title": "You're One Step Closer to Stress-Free Events!",
@@ -287,7 +300,9 @@
       "googleForms": "Google Forms",
       "liveCounter": "Compteur en Direct",
       "attendees": "Participants",
-      "organizerView": "Tableau de Bord Organisateur"
+      "organizerView": "Tableau de Bord Organisateur",
+      "registrationForm": "📝 Formulaire d'Inscription",
+      "analyticsInsights": "📊 Analyses & Statistiques"
     },
     "pricing": {
       "title": "Des Tarifs Simples et Transparents",
@@ -357,9 +372,10 @@
           "button": "Remplir le formulaire"
         },
         "call": {
-          "title": "Consultation Rapide 15 min",
-          "description": "Appel stratégique gratuit pour discuter de vos besoins en tableau de bord d'événement et obtenir des recommandations personnalisées",
-          "button": "Réserver Consultation Gratuite"
+          "title": "Consultation Stratégique Gratuite de 15 min",
+          "description": "Obtenez des recommandations personnalisées et découvrez exactement comment nous pouvons résoudre vos défis de suivi d'événements",
+          "button": "Réserver l'Appel Stratégique Gratuit",
+          "trustBadges": "✅ Aucune carte de crédit requise • 🎯 Appel de 15 minutes"
         },
         "email": {
           "title": "Email direct",
@@ -374,6 +390,7 @@
         "email": "Email *",
         "phone": "Numéro de téléphone (Optionnel)",
         "organization": "Organisation/Club",
+        "organizationPlaceholder": "Nom de votre organisation",
         "eventType": "Type d'événement",
         "selectOption": "Sélectionnez une option",
         "sportsEvent": "Tournoi/Événement Sportif",
@@ -382,8 +399,17 @@
         "communityEvent": "Événement Communautaire/Association",
         "otherEvent": "Autre",
         "message": "Parlez-nous de votre événement *",
-        "submit": "Obtenir Mon Devis Personnalisé"
-      },
+        "messagePlaceholder": "Nombre de participants attendus, méthode d'inscription actuelle, besoins spécifiques...",
+        "submit": "Obtenir Mon Devis Personnalisé",
+        "popularFeaturesTitle": "Fonctionnalités populaires à mentionner :",
+        "features": {
+          "liveCounter": "Compteur en Direct",
+          "organizerDashboard": "Tableau de Bord Organisateur",
+          "multipleEvents": "Événements Multiples",
+          "customBranding": "Personnalisation de la Marque",
+          "advancedAnalytics": "Analyses Avancées"
+        }
+      }
       "success": {
         "title": "Demande Envoyée avec Succès !",
         "message": "Merci pour votre demande. Nous examinerons les détails de votre événement et vous recontacterons dans les 12 heures pour discuter de la configuration de votre tableau de bord.",
