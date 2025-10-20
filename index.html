@@ -464,14 +464,41 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="photo/IzuTech-logo.png" alt="IzuTech Events" width="120" height="30">
+            <!-- Business Ecosystem Section -->
+            <div class="footer-businesses" role="complementary" aria-labelledby="businesses-title">
+                <h4 id="businesses-title" class="footer-section-title" data-i18n="footer.businesses.title">Discover Our Ecosystem</h4>
+                <div class="businesses-grid" role="list" aria-label="Our business portfolio">
+                    
+                    <div class="business-card" role="listitem">
+                        <div class="business-icon">🤖</div>
+                        <h5 data-i18n="footer.businesses.ai.title">AI Solutions</h5>
+                        <p data-i18n="footer.businesses.ai.description">Practical AI automation for your business</p>
+                        <a href="https://izutech.fr/" target="_blank" rel="noopener" class="business-link" data-i18n="footer.businesses.cta" aria-label="Visit AI Solutions service">Explore →</a>
+                    </div>
+                    
+                    <div class="business-card" role="listitem">
+                        <div class="business-icon">🌐</div>
+                        <h5 data-i18n="footer.businesses.web.title">Professional Websites</h5>
+                        <p data-i18n="footer.businesses.web.description">Custom digital solutions for SMBs</p>
+                        <a href="https://web.izutech.fr/" target="_blank" rel="noopener" class="business-link" data-i18n="footer.businesses.cta" aria-label="Visit Professional Websites service">Explore →</a>
+                    </div>
                 </div>
-                <p data-i18n="footer.copyright">© 2025 IzuTech Events. All rights reserved.</p>
-                <p><a href="https://web.izutech.fr" style="color: rgba(255,255,255,0.7);" data-i18n="footer.websiteServices">Website Development Services</a></p>
+            </div>
+
+            <!-- Centered Brand Footer -->
+            <div class="footer-brand-centered">
+                <div class="container">
+                    <div class="footer-logo">
+                        <img src="photo/IzuTech-logo.png" alt="IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking" width="120" height="30" itemprop="logo">
+                    </div>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Accelerating Business Digital Transformation with AI</p>
+                    <div class="footer-legal">
+                        <p class="footer-copyright" data-i18n="footer.copyright" itemprop="copyrightYear">© 2025 IzuTech. All rights reserved.</p>
+                        <p class="footer-privacy" data-i18n="footer.privacy" itemprop="description">Your data is processed in compliance with GDPR and secured.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
