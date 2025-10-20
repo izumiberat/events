@@ -187,7 +187,7 @@
                     <div class="demo-grid">
                         <div class="demo-item">
                             <h4 data-i18n="demo.googleForms">Google Forms</h4>
-                            <div class="demo-placeholder">📝 Registration Form</div>
+                            <div class="demo-placeholder" data-i18n="demo.registrationForm">📝 Registration Form</div>
                         </div>
                         <div class="demo-arrow">→</div>
                         <div class="demo-item">
@@ -200,7 +200,7 @@
                         <div class="demo-arrow">→</div>
                         <div class="demo-item">
                             <h4 data-i18n="demo.organizerView">Organizer Dashboard</h4>
-                            <div class="demo-placeholder">📊 Analytics & Insights</div>
+                            <div class="demo-placeholder" data-i18n="demo.analyticsInsights">📊 Analytics & Insights</div>
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@
                                 
                                 <div class="form-group">
                                     <label for="organization" data-i18n="contact.form.organization">Organization/Club</label>
-                                    <input type="text" id="organization" name="organization" placeholder="Your organization name">
+                                    <input type="text" id="organization" name="organization" placeholder="Your organization name" data-i18n-placeholder="contact.form.organizationPlaceholder">
                                 </div>
                                 
                                 <div class="form-group">
@@ -360,21 +360,21 @@
                                 
                                 <div class="form-group">
                                     <label for="message" data-i18n="contact.form.message">Tell us about your event *</label>
-                                    <textarea id="message" name="message" rows="4" required placeholder="Number of expected attendees, current registration method, specific needs..."></textarea>
+                                    <textarea id="message" name="message" rows="4" required data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
                                 </div>
                                 
                                 <!-- Add-ons guidance -->
                                 <div class="addons-guidance">
-                                    <p><strong>Popular features to mention:</strong></p>
+                                    <p><strong data-i18n="contact.form.popularFeaturesTitle">Popular features to mention:</strong></p>
                                     <div class="addons-tags">
-                                        <span class="addon-tag">Live Counter</span>
-                                        <span class="addon-tag">Organizer Dashboard</span>
-                                        <span class="addon-tag">Multiple Events</span>
-                                        <span class="addon-tag">Custom Branding</span>
-                                        <span class="addon-tag">Advanced Analytics</span>
+                                        <span class="addon-tag" data-i18n="contact.form.features.liveCounter">Live Counter</span>
+                                        <span class="addon-tag" data-i18n="contact.form.features.organizerDashboard">Organizer Dashboard</span>
+                                        <span class="addon-tag" data-i18n="contact.form.features.multipleEvents">Multiple Events</span>
+                                        <span class="addon-tag" data-i18n="contact.form.features.customBranding">Custom Branding</span>
+                                        <span class="addon-tag" data-i18n="contact.form.features.advancedAnalytics">Advanced Analytics</span>
                                     </div>
                                 </div>
-                                
+
                                 <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">
                                     <span class="btn-text">Get My Custom Quote</span>
                                     <span class="btn-loading" style="display: none;">Sending...</span>
