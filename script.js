@@ -111,7 +111,15 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (value !== undefined && value !== null) {
                 if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                    element.setAttribute('placeholder', value);
+                    // For form elements, update placeholder if it has data-i18n-placeholder
+                    const placeholderKey = element.getAttribute('data-i18n-placeholder');
+                    if (placeholderKey) {
+                        const placeholderValue = getNestedValue(translations, placeholderKey);
+                        if (placeholderValue) {
+                            element.setAttribute('placeholder', placeholderValue);
+                        }
+                    }
+                    // Also set value if empty
                     if (!element.value) {
                         element.value = value;
                     }
@@ -132,6 +140,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (languageSelector) {
             languageSelector.value = currentLanguage;
         }
+
+        // Update Calendly trust badges with translations
+        updateCalendlyTrustBadges(translations);
     }
 
     // Helper function to get nested object values
@@ -139,6 +150,19 @@ document.addEventListener('DOMContentLoaded', function() {
         return path.split('.').reduce((current, key) => {
             return current && current[key] !== undefined ? current[key] : undefined;
         }, obj);
+    }
+
+    // New function to update Calendly trust badges
+    function updateCalendlyTrustBadges(translations) {
+        const calendlyTrustElements = document.querySelectorAll('.calendly-trust');
+        calendlyTrustElements.forEach(element => {
+            const trustBadges = getNestedValue(translations, 'contact.options.call.trustBadges');
+            if (trustBadges) {
+                element.innerHTML = trustBadges.split('•').map(badge => 
+                    `<span>${badge.trim()}</span>`
+                ).join('<span>•</span>');
+            }
+        });
     }
 
     // Initialize language
@@ -217,20 +241,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Validate required fields
                 if (!name?.value.trim()) {
-                    showError(name, 'Name is required');
+                    showError(name, currentLanguage === 'fr' ? 'Le nom est requis' : 'Name is required');
                     isValid = false;
                 }
 
                 if (!email?.value.trim()) {
-                    showError(email, 'Email is required');
+                    showError(email, currentLanguage === 'fr' ? 'L\'email est requis' : 'Email is required');
                     isValid = false;
                 } else if (!isValidEmail(email.value)) {
-                    showError(email, 'Please enter a valid email address');
+                    showError(email, currentLanguage === 'fr' ? 'Veuillez entrer une adresse email valide' : 'Please enter a valid email address');
                     isValid = false;
                 }
 
                 if (!message?.value.trim()) {
-                    showError(message, 'Please tell us about your event');
+                    showError(message, currentLanguage === 'fr' ? 'Veuillez nous parler de votre événement' : 'Please tell us about your event');
                     isValid = false;
                 }
 
@@ -245,6 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (btnText && btnLoading) {
                         btnText.style.display = 'none';
                         btnLoading.style.display = 'inline';
+                        btnLoading.textContent = currentLanguage === 'fr' ? 'Envoi en cours...' : 'Sending...';
                     }
 
                     try {
@@ -267,7 +292,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         
                     } catch (error) {
                         console.error('Form submission error:', error);
-                        alert('Sorry, there was an error sending your message. Please try again or email us directly.');
+                        alert(currentLanguage === 'fr' 
+                            ? 'Désolé, une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer ou nous envoyer un email directement.'
+                            : 'Sorry, there was an error sending your message. Please try again or email us directly.');
                     } finally {
                         submitBtn.disabled = false;
                         if (btnText && btnLoading) {
@@ -321,7 +348,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const btnText = this.querySelector('.btn-text');
                 if (btnText) {
                     const originalText = btnText.textContent;
-                    btnText.textContent = 'Opening...';
+                    btnText.textContent = currentLanguage === 'fr' ? 'Ouverture...' : 'Opening...';
                     
                     // Reset text after a delay
                     setTimeout(() => {
@@ -338,16 +365,20 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Add trust indicators to Calendly links in hero
+        // Add trust indicators to Calendly links in hero with translations
         const heroCalendlyLink = document.querySelector('.hero a[href*="calendly.com"]');
         if (heroCalendlyLink) {
+            // Remove existing trust indicator if any
+            const existingTrustIndicator = heroCalendlyLink.parentNode.querySelector('.calendly-trust');
+            if (existingTrustIndicator) {
+                existingTrustIndicator.remove();
+            }
+
             const trustIndicator = document.createElement('div');
             trustIndicator.className = 'calendly-trust';
-            trustIndicator.innerHTML = `
-                <span>✅ No credit card required</span>
-                <span>•</span>
-                <span>🎯 15-minute call</span>
-            `;
+            trustIndicator.style.cssText = 'display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.875rem; color: #666; flex-wrap: wrap; justify-content: center;';
+            
+            // Initial content will be updated by updateCalendlyTrustBadges
             heroCalendlyLink.parentNode.insertBefore(trustIndicator, heroCalendlyLink.nextSibling);
         }
     }
