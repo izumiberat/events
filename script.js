@@ -159,8 +159,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const trustBadges = getNestedValue(translations, 'contact.options.call.trustBadges');
             if (trustBadges) {
                 element.innerHTML = trustBadges.split('•').map(badge => 
-                    `<span>${badge.trim()}</span>`
-                ).join('<span>•</span>');
+                    `<span style="color: #000; font-weight: 500;">${badge.trim()}</span>`
+                ).join('<span style="color: #000;">•</span>');
             }
         });
     }
@@ -376,10 +376,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const trustIndicator = document.createElement('div');
             trustIndicator.className = 'calendly-trust';
-            trustIndicator.style.cssText = 'display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.875rem; color: #666; flex-wrap: wrap; justify-content: center;';
+            trustIndicator.style.cssText = 'display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.875rem; color: #000; font-weight: 500; flex-wrap: wrap; justify-content: center;';
             
             // Initial content will be updated by updateCalendlyTrustBadges
             heroCalendlyLink.parentNode.insertBefore(trustIndicator, heroCalendlyLink.nextSibling);
+            
+            // Update immediately with current language
+            updateCalendlyTrustBadges(translations[currentLanguage] || {});
         }
     }
 
