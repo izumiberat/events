@@ -446,6 +446,22 @@ h2 {
     gap: 0.375rem;
 }
 
+trust-indicators {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #000;
+    font-weight: 500;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trust-separator {
+    color: #666;
+}
+
 /* Loading state for external links */
 .btn-loading {
     display: none;
