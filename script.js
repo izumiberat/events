@@ -168,51 +168,146 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Form submission handling
-    const contactForm = document.getElementById('event-lead-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            
-            // Show loading state
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-
-            try {
-                const formData = new FormData(contactForm);
-                
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    // Show success message
-                    contactForm.innerHTML = `
-                        <div style="text-align: center; padding: 2rem;">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🎉</div>
-                            <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">Thank You!</h3>
-                            <p>Your message has been sent successfully. We'll get back to you within 12 hours to discuss your event dashboard setup.</p>
-                        </div>
-                    `;
-                } else {
-                    throw new Error('Form submission failed');
+    // Mobile contact section interactions
+    function initContactSection() {
+        const showFormBtn = document.querySelector('.show-form-btn');
+        const backToOptions = document.querySelector('.back-to-options');
+        const contactFormAndTrust = document.querySelector('.contact-form-and-trust');
+        const contactOptions = document.querySelector('.contact-options');
+        
+        if (showFormBtn && contactFormAndTrust && contactOptions) {
+            showFormBtn.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    contactOptions.style.display = 'none';
+                    contactFormAndTrust.classList.add('active');
+                    // Smooth scroll to form
+                    contactFormAndTrust.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 }
+            });
+        }
+        
+        if (backToOptions && contactFormAndTrust && contactOptions) {
+            backToOptions.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    contactFormAndTrust.classList.remove('active');
+                    contactOptions.style.display = 'grid';
+                    // Smooth scroll back to options
+                    contactOptions.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+    }
+
+    // Enhanced form submission for events
+    function initContactForm() {
+        const contactForm = document.getElementById('event-lead-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
                 
-            } catch (error) {
-                console.error('Form submission error:', error);
-                alert('Sorry, there was an error sending your message. Please try again or email us directly.');
-            } finally {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }
-        });
+                // Basic validation
+                const name = document.getElementById('name');
+                const email = document.getElementById('email');
+                const message = document.getElementById('message');
+                let isValid = true;
+
+                // Reset previous errors
+                contactForm.querySelectorAll('.error-message').forEach(msg => msg.remove());
+                contactForm.querySelectorAll('.error').forEach(field => field.classList.remove('error'));
+
+                // Validate required fields
+                if (!name?.value.trim()) {
+                    showError(name, 'Name is required');
+                    isValid = false;
+                }
+
+                if (!email?.value.trim()) {
+                    showError(email, 'Email is required');
+                    isValid = false;
+                } else if (!isValidEmail(email.value)) {
+                    showError(email, 'Please enter a valid email address');
+                    isValid = false;
+                }
+
+                if (!message?.value.trim()) {
+                    showError(message, 'Please tell us about your event');
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    // Show loading state
+                    const submitBtn = contactForm.querySelector('button[type="submit"]');
+                    const form = contactForm;
+                    submitBtn.disabled = true;
+                    const btnText = submitBtn.querySelector('.btn-text');
+                    const btnLoading = submitBtn.querySelector('.btn-loading');
+                    
+                    if (btnText && btnLoading) {
+                        btnText.style.display = 'none';
+                        btnLoading.style.display = 'inline';
+                    }
+
+                    try {
+                        const formData = new FormData(form);
+                        
+                        const response = await fetch(form.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (response.ok) {
+                            // Show success message
+                            showSuccessMessage();
+                        } else {
+                            throw new Error('Form submission failed');
+                        }
+                        
+                    } catch (error) {
+                        console.error('Form submission error:', error);
+                        alert('Sorry, there was an error sending your message. Please try again or email us directly.');
+                    } finally {
+                        submitBtn.disabled = false;
+                        if (btnText && btnLoading) {
+                            btnText.style.display = 'inline';
+                            btnLoading.style.display = 'none';
+                        }
+                    }
+                }
+            });
+        }
+    }
+
+    function showSuccessMessage() {
+        const form = document.getElementById('event-lead-form');
+        const successMessage = document.getElementById('form-success');
+        
+        if (form && successMessage) {
+            // Hide form, show success message
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Smooth scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    }
+
+    function showError(field, message) {
+        if (!field) return;
+        
+        field.classList.add('error');
+        const errorElement = document.createElement('div');
+        errorElement.className = 'error-message';
+        errorElement.style.cssText = 'color: #E74C3C; font-size: 0.875rem; margin-top: 0.25rem;';
+        errorElement.textContent = message;
+        field.parentNode.appendChild(errorElement);
+    }
+
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
     }
 
     // Live counter animation for demo
@@ -249,6 +344,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize the page
     initLanguage();
+    initContactSection();
+    initContactForm();
 
     // Start counter animation after a short delay
     setTimeout(animateCounter, 1000);
@@ -258,3 +355,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const otherLang = browserLang.startsWith('fr') ? 'en' : 'fr';
     loadTranslations(otherLang);
 });
+
+// Make resetEventForm globally available for the success message button
+window.resetEventForm = function() {
+    const form = document.getElementById('event-lead-form');
+    const successMessage = document.getElementById('form-success');
+    
+    if (form && successMessage) {
+        // Show form, hide success message
+        form.style.display = 'block';
+        successMessage.style.display = 'none';
+        
+        // Reset form fields
+        form.reset();
+        
+        // Scroll to form
+        form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+};
