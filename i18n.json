@@ -152,13 +152,14 @@
         "call": {
           "title": "Free 15-min Strategy Session",
           "description": "Get personalized recommendations and see exactly how we can solve your event tracking challenges",
-          "button": "Book Free Strategy Call"
+          "button": "Book Free Strategy Call",
+          "trustBadges": "✅ No credit card required • 🎯 15-minute call"
+
         },
         "email": {
           "title": "Email directly",
           "description": "Prefer email? Send us your event details and we'll respond quickly.",
-          "button": "events@izutech.fr",
-          "trustBadges": "✅ No credit card required • 🎯 15-minute call"
+          "button": "events@izutech.fr"
         }
       },
       "form": {
