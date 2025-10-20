@@ -2,7 +2,7 @@
   "en": {
     "meta": {
       "title": "IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking",
-      "description": "Real-time event management with live attendee counters, organizer dashboards, and Google Forms integration for sports clubs, schools, and businesses."
+      "description": "Stop guessing about event attendance. Real-time event management with live attendee counters, organizer dashboards, and Google Forms integration for sports clubs, schools, and businesses."
     },
     "nav": {
       "features": "Features",
@@ -11,18 +11,18 @@
       "contact": "Contact"
     },
     "hero": {
-      "title": "Live Event Dashboards & Real-time Attendee Tracking",
-      "subtitle": "Transform your Google Forms into powerful event management systems with live counters, organizer dashboards, and real-time analytics.",
-      "cta": "Book Free Consultation",
-      "demo": "See Live Demo",
-      "counterLabel": "Current Attendees",
-      "counterTarget": "Target: 200 participants",
+      "title": "Stop Guessing, Start Knowing: Live Event Dashboards & Real-time Attendance Tracking",
+      "subtitle": "Turn your Google Forms into powerful event command centers with live registration counters, organizer dashboards, and real-time analytics that eliminate the guesswork.",
+      "cta": "Get Your Free Dashboard Setup",
+      "demo": "See Live Demo in Action",
+      "counterLabel": "Current Registrations",
+      "counterTarget": "Goal: 200 attendees",
       "trustBadge1": "🚀 24-48h Setup",
-      "trustBadge2": "✅ Free Consultation",
-      "trustBadge3": "💬 12h Response"
+      "trustBadge2": "✅ Free Strategy Session",
+      "trustBadge3": "💬 12h Response Guarantee"
     },
     "clients": {
-      "title": "Perfect For",
+      "title": "Trusted By",
       "sports": "Sports Clubs",
       "sportsDesc": "Tournaments, tryouts, and club events",
       "schools": "Schools & Universities",
@@ -33,45 +33,45 @@
       "associationsDesc": "Community events, festivals, gatherings"
     },
     "features": {
-      "title": "Powerful Event Management Features",
+      "title": "Everything You Need to Run Successful Events",
       "liveCounter": {
-        "title": "Live Attendee Counter",
-        "description": "Real-time counter that updates automatically as people register through your Google Form."
+        "title": "Watch Registrations Roll In Live",
+        "description": "See exactly how many people are signing up in real-time—no more manual counting or spreadsheet updates."
       },
       "organizerDashboard": {
-        "title": "Organizer Dashboard",
-        "description": "Private dashboard with detailed analytics: age groups, attendance ratios, progress toward goals."
+        "title": "Your Event Command Center",
+        "description": "Private dashboard with all the insights you need: age groups, attendance trends, and progress toward your goals at a glance."
       },
       "automaticSync": {
-        "title": "Automatic Google Forms Sync",
-        "description": "Seamlessly connects to your existing Google Forms - no data migration needed."
+        "title": "Works with Your Existing Forms",
+        "description": "Seamlessly connects to your current Google Forms—keep your registration process, gain powerful insights."
       },
       "goalTracking": {
-        "title": "Goal Tracking",
-        "description": "Set participant targets and track progress with visual progress bars."
+        "title": "Hit Your Attendance Targets",
+        "description": "Set participant goals and track progress with visual indicators that motivate your team."
       },
       "demographics": {
-        "title": "Demographic Insights",
-        "description": "Auto-calculated ratios (adults/children, member types, age groups)."
+        "title": "Understand Your Audience",
+        "description": "Automatically calculated insights about your attendees' demographics and preferences."
       },
       "mobileReady": {
-        "title": "Mobile-Friendly",
-        "description": "Access your dashboard from any device, anywhere."
+        "title": "Manage Events On-the-Go",
+        "description": "Access your dashboard from any device—check registrations from your phone during event setup."
       }
     },
     "process": {
-      "title": "How It Works in 3 Simple Steps",
+      "title": "Get Your Live Dashboard in 3 Simple Steps",
       "step1": {
-        "title": "Share Your Google Form",
-        "description": "Provide us with your existing Google Form link - or we can help you create one."
+        "title": "Share Your Google Form Link",
+        "description": "Send us your existing form—or we'll help you create the perfect one in minutes."
       },
       "step2": {
-        "title": "We Set Up Your Dashboard",
-        "description": "We connect your form to a custom dashboard and live counter within 24-48 hours."
+        "title": "We Build Your Custom Dashboard",
+        "description": "We connect your form and deliver a fully functional dashboard within 24-48 hours."
       },
       "step3": {
-        "title": "Promote & Monitor",
-        "description": "Share your event page and watch registrations come in live!"
+        "title": "Launch & Watch Registrations Grow",
+        "description": "Share your event and watch registrations come in live—no technical skills needed!"
       }
     },
     "demo": {
@@ -82,65 +82,65 @@
       "organizerView": "Organizer Dashboard"
     },
     "pricing": {
-      "title": "Simple Event Pricing",
-      "mostPopular": "Most Popular",
+      "title": "Simple Pricing, Powerful Results",
+      "mostPopular": "Most Popular - Best Value",
       "singleEvent": {
-        "title": "Single Event Package",
-        "description": "One-time setup",
+        "title": "Perfect Event Package",
+        "description": "Everything you need for one successful event",
         "features": [
-          "Live attendee counter",
-          "Organizer dashboard",
-          "Google Forms integration",
-          "Goal tracking & progress bars",
-          "Demographic analytics",
-          "3 months of support"
+          "Live registration counter widget",
+          "Organizer dashboard with real-time data",
+          "Automatic Google Forms integration",
+          "Goal tracking with visual progress",
+          "Demographic analytics & insights",
+          "3 months of premium support"
         ]
       },
       "ongoing": {
-        "title": "Club/Organization Package",
-        "description": "Annual package",
+        "title": "Growth Package",
+        "description": "For organizations running multiple events",
         "features": [
-          "Everything in Single Event",
-          "Multiple events management",
-          "Custom branding",
-          "Advanced analytics",
-          "1 year of support & updates",
-          "Priority setup (24h)"
+          "Everything in Perfect Event package",
+          "Unlimited events management",
+          "Custom branding & white-label options",
+          "Advanced analytics & reporting",
+          "1 year of premium support & updates",
+          "Priority setup (24h guaranteed)"
         ]
       },
-      "cta": "Get Started"
+      "cta": "Start My Dashboard"
     },
     "contact": {
-      "title": "Ready for Live Event Management?",
+      "title": "Ready to Transform Your Event Management?",
       "trust": {
-        "title": "Why Event Organizers Choose IzuTech",
+        "title": "Why Smart Event Organizers Choose Us",
         "points": [
           {
             "icon": "⚡",
-            "title": "Quick Setup",
-            "text": "Dashboard ready in 24-48 hours",
+            "title": "Lightning-Fast Setup",
+            "text": "Your dashboard live in 24-48 hours—guaranteed",
             "mobileText": "24-48h setup"
           },
           {
             "icon": "💰",
-            "title": "Transparent Pricing",
-            "text": "All-inclusive pricing from €290, no surprises",
+            "title": "No Surprise Pricing",
+            "text": "All-inclusive pricing from €290—know exactly what you're getting",
             "mobileText": "From €290"
           },
           {
             "icon": "💬",
-            "title": "12h Response Time",
-            "text": "We get back to you within 12 hours",
-            "mobileText": "Fast reply"
+            "title": "12h Response Guarantee",
+            "text": "We answer all inquiries within 12 hours—usually faster",
+            "mobileText": "Fast response"
           },
           {
             "icon": "🔄",
-            "title": "Google Forms Integration",
-            "text": "Seamless integration with your existing forms",
-            "mobileText": "Auto integration"
+            "title": "Zero Process Changes",
+            "text": "Works with your existing forms—no participant retraining needed",
+            "mobileText": "No changes needed"
           }
         ],
-        "guarantee": "Free Consultation & Quote"
+        "guarantee": "Free Custom Demo & Quote"
       },
       "options": {
         "form": {
@@ -149,9 +149,9 @@
           "button": "Fill out form"
         },
         "call": {
-          "title": "Quick 15-min Consultation",
-          "description": "Free strategy call to discuss your event dashboard needs and get personalized recommendations",
-          "button": "Book Free Consultation"
+          "title": "Free 15-min Strategy Session",
+          "description": "Get personalized recommendations and see exactly how we can solve your event tracking challenges",
+          "button": "Book Free Strategy Call"
         },
         "email": {
           "title": "Email directly",
@@ -174,22 +174,22 @@
         "communityEvent": "Community/Association Event",
         "otherEvent": "Other",
         "message": "Tell us about your event *",
-        "submit": "Get My Event Dashboard"
+        "submit": "Get My Custom Quote"
       },
       "success": {
-        "title": "Request Sent Successfully!",
-        "message": "Thank you for your inquiry. We'll review your event details and get back to you within 12 hours to discuss your dashboard setup.",
-        "button": "Send Another Request"
+        "title": "You're One Step Closer to Stress-Free Events!",
+        "message": "Perfect! We've received your event details and will contact you within 12 hours with your custom dashboard proposal.",
+        "button": "Setup Another Event"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "q1": "Do I need to change my current registration process?",
-      "a1": "No! We integrate with your existing Google Form. Participants continue registering the same way.",
-      "q2": "How quickly can you set this up?",
-      "a2": "Most dashboards are live within 24-48 hours after we receive your Google Form link.",
-      "q3": "Can I use this with my existing website?",
-      "a3": "Absolutely! We provide embed codes for the counter and links to the dashboard that work with any website."
+      "title": "Common Questions from Event Organizers",
+      "q1": "Will this disrupt my current registration process?",
+      "a1": "Not at all! We integrate seamlessly with your existing Google Form. Your participants continue registering exactly as they do now—you just get powerful new insights.",
+      "q2": "How quickly can I start seeing live registrations?",
+      "a2": "Most clients have their dashboard live within 24-48 hours after sharing their Google Form link.",
+      "q3": "Do I need technical skills to use this?",
+      "a3": "None whatsoever! We handle all the technical setup. You just share your form link and start monitoring registrations."
     },
     "footer": {
       "copyright": "© 2025 IzuTech Events. All rights reserved.",
@@ -198,8 +198,8 @@
   },
   "fr": {
     "meta": {
-      "title": "IzuTech Events - Tableaux de Bord d'Événements en Direct & Suivi des Participants",
-      "description": "Gestion d'événements en temps réel avec compteurs de participants, tableaux de bord organisateurs et intégration Google Forms pour clubs sportifs, écoles et entreprises."
+      "title": "IzuTech Events - Tableaux de Bord Événementiels en Temps Réel & Suivi des Participants",
+      "description": "Ne devinez plus le nombre de participants. Gestion d'événements en temps réel avec compteurs de participants, tableaux de bord organisateurs et intégration Google Forms pour clubs sportifs, écoles et entreprises."
     },
     "nav": {
       "features": "Fonctionnalités",
@@ -208,18 +208,18 @@
       "contact": "Contact"
     },
     "hero": {
-      "title": "Tableaux de Bord d'Événements & Suivi des Participants en Temps Réel",
-      "subtitle": "Transformez vos Google Forms en systèmes de gestion d'événements puissants avec compteurs en direct, tableaux de bord organisateurs et analyses en temps réel.",
-      "cta": "Réserver Consultation Gratuite",
+      "title": "Tableaux de Bord Événementiels en Temps Réel & Suivi des Participants",
+      "subtitle": "Transformez vos Google Forms en véritables centres de commande d'événements avec compteurs live, tableaux de bord organisateurs et analytics en temps réel.",
+      "cta": "Réserver une Consultation Gratuite",
       "demo": "Voir la Démo Live",
-      "counterLabel": "Participants Actuels",
+      "counterLabel": "Participants Inscrits",
       "counterTarget": "Objectif : 200 participants",
-      "trustBadge1": "🚀 Configuration 24-48h",
+      "trustBadge1": "🚀 Installation 24-48h",
       "trustBadge2": "✅ Consultation Gratuite",
-      "trustBadge3": "💬 Réponse 12h"
+      "trustBadge3": "💬 Réponse sous 12h"
     },
     "clients": {
-      "title": "Parfait Pour",
+      "title": "Ideal Pour",
       "sports": "Clubs Sportifs",
       "sportsDesc": "Tournois, sélections, événements de club",
       "schools": "Écoles & Universités",
@@ -230,14 +230,14 @@
       "associationsDesc": "Événements communautaires, festivals, rassemblements"
     },
     "features": {
-      "title": "Fonctionnalités de Gestion d'Événements Puissantes",
+      "title": "Fonctionnalités Puissantes pour Gérer Vos Événements",
       "liveCounter": {
-        "title": "Compteur de Participants en Direct",
-        "description": "Compteur en temps réel qui se met à jour automatiquement lors des inscriptions via votre Google Form."
+        "title": "Compteur de Participants en Temps Réel",
+        "description": "Visualisez les inscriptions en direct avec un compteur qui se met à jour automatiquement à chaque nouveau participant."
       },
       "organizerDashboard": {
         "title": "Tableau de Bord Organisateur",
-        "description": "Tableau de bord privé avec analyses détaillées : groupes d'âge, ratios de participation, progression vers les objectifs."
+        "description": "Accédez à toutes vos données : répartition par âge, taux de participation, progression vers vos objectifs."
       },
       "automaticSync": {
         "title": "Synchronisation Automatique Google Forms",
@@ -252,23 +252,23 @@
         "description": "Ratios calculés automatiquement (adultes/enfants, types de membres, groupes d'âge)."
       },
       "mobileReady": {
-        "title": "Adapté Mobile",
+        "title": "Gérez Vos Événements en Mobilité",
         "description": "Accédez à votre tableau de bord depuis n'importe quel appareil, n'importe où."
       }
     },
     "process": {
-      "title": "Comment ça Marche en 3 Étapes Simples",
+      "title": "Fonctionnement en 3 Étapes Simples",
       "step1": {
         "title": "Partagez Votre Google Form",
-        "description": "Fournissez-nous le lien de votre Google Form existant - ou nous pouvons vous aider à en créer un."
+        "description": "Envoyez-nous le lien de votre formulaire existant - nous pouvons aussi vous aider à en créer un."
       },
       "step2": {
-        "title": "Nous Configurons Votre Tableau de Bord",
-        "description": "Nous connectons votre formulaire à un tableau de bord personnalisé et un compteur en direct dans les 24-48 heures."
+        "title": "Nous Installons Votre Solution",
+        "description": "Votre tableau de bord personnalisé et compteur live seront opérationnels sous 24-48 heures."
       },
       "step3": {
-        "title": "Promouvez & Surveillez",
-        "description": "Partagez votre page d'événement et regardez les inscriptions arriver en direct !"
+        "title": "Lancez et Suivez Votre Événement",
+        "description": "Diffusez votre page événement et suivez les inscriptions en direct !"
       }
     },
     "demo": {
@@ -279,23 +279,23 @@
       "organizerView": "Tableau de Bord Organisateur"
     },
     "pricing": {
-      "title": "Tarification Événement Simple",
+      "title": "Des Tarifs Simples et Transparents",
       "mostPopular": "Le Plus Populaire",
       "singleEvent": {
-        "title": "Pack Événement Unique",
-        "description": "Configuration unique",
+        "title": "Forfait Événement Unique",
+        "description": "Solution clé en main pour un événement",
         "features": [
-          "Compteur de participants en direct",
-          "Tableau de bord organisateur",
-          "Intégration Google Forms",
-          "Suivi des objectifs & barres de progrès",
-          "Analyses démographiques",
-          "3 mois de support"
+          "Compteur de participants en temps réel",
+          "Tableau de bord organisateur personnalisé",
+          "Intégration Google Forms instantanée",
+          "Suivi d'objectifs avec indicateurs visuels",
+          "Analyses démographiques automatiques",
+          "3 mois d'assistance incluse"
         ]
       },
       "ongoing": {
-        "title": "Pack Club/Organisation",
-        "description": "Forfait annuel",
+        "title": "Forfait Club/Organisation",
+        "description": "Solution annuelle complète",
         "features": [
           "Tout inclus dans Événement Unique",
           "Gestion de multiples événements",
@@ -305,23 +305,23 @@
           "Configuration prioritaire (24h)"
         ]
       },
-      "cta": "Commencer"
+      "cta": "Démarrer Maintenant"
     },
     "contact": {
       "title": "Prêt pour la Gestion d'Événements en Direct ?",
       "trust": {
-        "title": "Pourquoi les Organisateurs Choisissent IzuTech",
+        "title": "Pourquoi les Organisateurs nous Font Confiance",
         "points": [
           {
             "icon": "⚡",
-            "title": "Configuration Rapide",
-            "text": "Tableau de bord prêt en 24-48 heures",
-            "mobileText": "Configuration 24-48h"
+            "title": "Mise en Place Rapide",
+            "text": "Votre tableau de bord opérationnel en 24-48 heures",
+            "mobileText": "Opérationnel 24-48h"
           },
           {
             "icon": "💰",
-            "title": "Tarification Transparente",
-            "text": "Tarif tout compris à partir de 290€, sans surprises",
+            "title": "Prix Transparent",
+            "text": "Forfait tout compris à partir de 290€, sans frais cachés",
             "mobileText": "À partir de 290€"
           },
           {
@@ -337,7 +337,7 @@
             "mobileText": "Intégration auto"
           }
         ],
-        "guarantee": "Consultation Gratuite & Devis"
+        "guarantee": "Consultation Gratuite & Devis Personnalisé"
       },
       "options": {
         "form": {
@@ -371,12 +371,12 @@
         "communityEvent": "Événement Communautaire/Association",
         "otherEvent": "Autre",
         "message": "Parlez-nous de votre événement *",
-        "submit": "Obtenir Mon Tableau de Bord"
+        "submit": "Obtenir Mon Devis Personnalisé"
       },
       "success": {
         "title": "Demande Envoyée avec Succès !",
         "message": "Merci pour votre demande. Nous examinerons les détails de votre événement et vous recontacterons dans les 12 heures pour discuter de la configuration de votre tableau de bord.",
-        "button": "Envoyer une Autre Demande"
+        "button": "Configurer un Autre Événement"
       }
     },
     "faq": {
