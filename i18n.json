@@ -153,7 +153,8 @@
           "title": "Free 15-min Strategy Session",
           "description": "Get personalized recommendations and see exactly how we can solve your event tracking challenges",
           "button": "Book Free Strategy Call",
-          "trustBadges": "✅ No credit card required • 🎯 15-minute call"
+          "trustBadge1": "✅ No credit card required",
+          "trustBadge2": "🎯 15-minute call"
         },
         "email": {
           "title": "Email directly",
@@ -375,7 +376,8 @@
           "title": "Consultation Stratégique Gratuite de 15 min",
           "description": "Obtenez des recommandations personnalisées et découvrez exactement comment nous pouvons résoudre vos défis de suivi d'événements",
           "button": "Réserver l'Appel Stratégique Gratuit",
-          "trustBadges": "✅ Aucune carte de crédit requise • 🎯 Appel de 15 minutes"
+          "trustBadge1": "✅ Aucune carte de crédit requise",
+          "trustBadge2": "🎯 Appel de 15 minutes"
         },
         "email": {
           "title": "Email direct",
