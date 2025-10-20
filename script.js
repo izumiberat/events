@@ -140,9 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (languageSelector) {
             languageSelector.value = currentLanguage;
         }
-
-        // Update Calendly trust badges with translations
-        updateCalendlyTrustBadges(translations);
     }
 
     // Helper function to get nested object values
@@ -150,19 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return path.split('.').reduce((current, key) => {
             return current && current[key] !== undefined ? current[key] : undefined;
         }, obj);
-    }
-
-    // New function to update Calendly trust badges
-    function updateCalendlyTrustBadges(translations) {
-        const calendlyTrustElements = document.querySelectorAll('.calendly-trust');
-        calendlyTrustElements.forEach(element => {
-            const trustBadges = getNestedValue(translations, 'contact.options.call.trustBadges');
-            if (trustBadges) {
-                element.innerHTML = trustBadges.split('•').map(badge => 
-                    `<span style="color: #000; font-weight: 500;">${badge.trim()}</span>`
-                ).join('<span style="color: #000;">•</span>');
-            }
-        });
     }
 
     // Initialize language
@@ -364,26 +348,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
-        
-        // Add trust indicators to Calendly links in hero with translations
-        const heroCalendlyLink = document.querySelector('.hero a[href*="calendly.com"]');
-        if (heroCalendlyLink) {
-            // Remove existing trust indicator if any
-            const existingTrustIndicator = heroCalendlyLink.parentNode.querySelector('.calendly-trust');
-            if (existingTrustIndicator) {
-                existingTrustIndicator.remove();
-            }
-
-            const trustIndicator = document.createElement('div');
-            trustIndicator.className = 'calendly-trust';
-            trustIndicator.style.cssText = 'display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.875rem; color: #000; font-weight: 500; flex-wrap: wrap; justify-content: center;';
-            
-            // Initial content will be updated by updateCalendlyTrustBadges
-            heroCalendlyLink.parentNode.insertBefore(trustIndicator, heroCalendlyLink.nextSibling);
-            
-            // Update immediately with current language
-            updateCalendlyTrustBadges(translations[currentLanguage] || {});
-        }
     }
 
     // Track conversion events
