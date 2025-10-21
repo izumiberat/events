@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking</title>
     <meta name="description" content="Stop guessing about event attendance. Real-time event management with live attendee counters, organizer dashboards, and Google Forms integration.">
-    <meta name="keywords" content="event management, attendee counter, Google Forms integration, live dashboard, sports clubs, event tracking">
+    <meta name="keywords" content="event management, attendee counter, Google Forms integration, live dashboard, sports clubs, event tracking, real-time analytics">
     <meta name="author" content="IzuTech">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://events.izutech.fr">
+    
+    <!-- Multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://events.izutech.fr">
+    <link rel="alternate" hreflang="fr" href="https://events.izutech.fr">
+    <link rel="alternate" hreflang="x-default" href="https://events.izutech.fr">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="IzuTech Events - Live Event Dashboards & Attendee Tracking">
@@ -13,40 +26,121 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://events.izutech.fr">
     <meta property="og:image" content="https://events.izutech.fr/photo/event-dashboard-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="IzuTech Events Dashboard Preview">
+    <meta property="og:site_name" content="IzuTech Events">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking">
     <meta name="twitter:description" content="Stop guessing about event attendance. Real-time event management with live counters and dashboards.">
+    <meta name="twitter:image" content="https://events.izutech.fr/photo/event-dashboard-preview.png">
+    <meta name="twitter:site" content="@IzuTech">
     
-    <!-- Favicon -->
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IzuTech Events",
+        "url": "https://events.izutech.fr",
+        "logo": "https://events.izutech.fr/photo/IzuTech-logo.png",
+        "description": "Real-time event management with live attendee counters, organizer dashboards, and Google Forms integration",
+        "sameAs": [
+            "https://web.izutech.fr",
+            "https://izutech.fr"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Event Management Software",
+        "provider": {
+            "@type": "Organization",
+            "name": "IzuTech"
+        },
+        "name": "Live Event Dashboards & Real-time Attendee Tracking",
+        "description": "Real-time event management with live attendee counters, organizer dashboards, and Google Forms integration",
+        "areaServed": "Worldwide",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Event Management Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Perfect Event Package",
+                        "description": "Everything you need for one successful event"
+                    },
+                    "price": "90",
+                    "priceCurrency": "EUR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Growth Package",
+                        "description": "For organizations running multiple events"
+                    },
+                    "price": "490",
+                    "priceCurrency": "EUR"
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Favicon and App Icons -->
     <link rel="icon" type="image/png" href="/photo/IzuTech-logo.png">
     <link rel="apple-touch-icon" href="/photo/IzuTech-logo.png">
     <link rel="icon" type="image/x-icon" href="/photo/IzuTech-logo.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0052CC">
+    <meta name="msapplication-TileColor" content="#0052CC">
     
-    <title>IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking</title>
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"></noscript>
     
-    <!-- Preload resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     
-    <link rel="stylesheet" href="style.css">
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://calendly.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <nav class="navbar" role="navigation" aria-label="Main navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="nav-container">
-            <a href="https://web.izutech.fr" class="nav-logo">
-                <img src="photo/IzuTech-logo.png" alt="IzuTech Events" width="160" height="40">
+            <a href="https://web.izutech.fr" class="nav-logo" itemprop="url">
+                <img src="photo/IzuTech-logo.png" alt="IzuTech Events - Live Event Management Solutions" width="160" height="40" loading="eager" itemprop="logo">
             </a>
             <ul class="nav-menu" role="menubar">
-                <li class="nav-item" role="none"><a href="#features" class="nav-link" role="menuitem" data-i18n="nav.features">Features</a></li>
-                <li class="nav-item" role="none"><a href="#how-it-works" class="nav-link" role="menuitem" data-i18n="nav.howItWorks">How It Works</a></li>
-                <li class="nav-item" role="none"><a href="#pricing" class="nav-link" role="menuitem" data-i18n="nav.pricing">Pricing</a></li>
-                <li class="nav-item" role="none"><a href="#contact" class="nav-link" role="menuitem" data-i18n="nav.contact">Contact</a></li>
+                <li class="nav-item" role="none" itemprop="name"><a href="#features" class="nav-link" role="menuitem" data-i18n="nav.features">Features</a></li>
+                <li class="nav-item" role="none" itemprop="name"><a href="#how-it-works" class="nav-link" role="menuitem" data-i18n="nav.howItWorks">How It Works</a></li>
+                <li class="nav-item" role="none" itemprop="name"><a href="#pricing" class="nav-link" role="menuitem" data-i18n="nav.pricing">Pricing</a></li>
+                <li class="nav-item" role="none" itemprop="name"><a href="#contact" class="nav-link" role="menuitem" data-i18n="nav.contact">Contact</a></li>
                 <li class="nav-item" role="none">
                     <select id="language-selector" class="language-selector" aria-label="Select language">
                         <option value="en">English</option>
@@ -63,13 +157,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="main-content">
+    <section class="hero" id="main-content" itemscope itemtype="https://schema.org/Product">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title" data-i18n="hero.title">Stop Guessing, Start Knowing: Live Event Dashboards & Real-time Attendance Tracking</h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">Turn your Google Forms into powerful event command centers with live registration counters, organizer dashboards, and real-time analytics that eliminate the guesswork.</p>
+                <h1 class="hero-title" data-i18n="hero.title" itemprop="name">Stop Guessing, Start Knowing: Live Event Dashboards & Real-time Attendance Tracking</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle" itemprop="description">Turn your Google Forms into powerful event command centers with live registration counters, organizer dashboards, and real-time analytics that eliminate the guesswork.</p>
                 <div class="cta-container">
-                    <a href="https://calendly.com/izutech-fr/events-15-minute-meeting" target="_blank" class="btn btn-primary" data-i18n="hero.cta" rel="noopener"
+                    <a href="https://calendly.com/izutech-fr/events-15-minute-meeting" target="_blank" class="btn btn-primary" data-i18n="hero.cta" rel="noopener" itemprop="url">
                         <span class="btn-text">Get Your Free Consultation</span>
                     </a>
                     <div class="trust-indicators">
@@ -79,15 +173,15 @@
                     </div>
                 </div>
                 <div class="trust-badges">
-                    <div class="trust-badge" data-i18n="hero.trustBadge1">🚀 24-48h Setup</div>
-                    <div class="trust-badge" data-i18n="hero.trustBadge2">✅ Free Strategy Session</div>
-                    <div class="trust-badge" data-i18n="hero.trustBadge3">💬 12h Response Guarantee</div>
+                    <div class="trust-badge" data-i18n="hero.trustBadge1" itemprop="additionalProperty">🚀 24-48h Setup</div>
+                    <div class="trust-badge" data-i18n="hero.trustBadge2" itemprop="additionalProperty">✅ Free Strategy Session</div>
+                    <div class="trust-badge" data-i18n="hero.trustBadge3" itemprop="additionalProperty">💬 12h Response Guarantee</div>
                 </div>
                 <!-- Live Counter Demo -->
                 <div class="counter-demo">
-                    <div class="counter-card">
+                    <div class="counter-card" itemscope itemtype="https://schema.org/Service">
                         <div class="counter-label" data-i18n="hero.counterLabel">Current Registrations</div>
-                        <div class="counter-number" id="liveCounter">127</div>
+                        <div class="counter-number" id="liveCounter" itemprop="serviceOutput">127</div>
                         <div class="counter-target" data-i18n="hero.counterTarget">Goal: 200 attendees</div>
                     </div>
                 </div>
@@ -100,22 +194,22 @@
         <div class="container">
             <h2 class="section-title" data-i18n="clients.title">Trusted By</h2>
             <div class="clients-grid">
-                <div class="client-card">
+                <div class="client-card" itemscope itemtype="https://schema.org/Organization">
                     <div class="client-icon">🏀</div>
                     <h3 data-i18n="clients.sports">Sports Clubs</h3>
                     <p data-i18n="clients.sportsDesc">Tournaments, tryouts, and club events</p>
                 </div>
-                <div class="client-card">
+                <div class="client-card" itemscope itemtype="https://schema.org/EducationalOrganization">
                     <div class="client-icon">🎓</div>
                     <h3 data-i18n="clients.schools">Schools & Universities</h3>
                     <p data-i18n="clients.schoolsDesc">Open days, workshops, student events</p>
                 </div>
-                <div class="client-card">
+                <div class="client-card" itemscope itemtype="https://schema.org/Organization">
                     <div class="client-icon">🏢</div>
                     <h3 data-i18n="clients.businesses">Businesses</h3>
                     <p data-i18n="clients.businessesDesc">Corporate events, seminars, team building</p>
                 </div>
-                <div class="client-card">
+                <div class="client-card" itemscope itemtype="https://schema.org/Organization">
                     <div class="client-icon">🎪</div>
                     <h3 data-i18n="clients.associations">Associations</h3>
                     <p data-i18n="clients.associationsDesc">Community events, festivals, gatherings</p>
@@ -129,35 +223,35 @@
         <div class="container">
             <h2 class="section-title" data-i18n="features.title">Everything You Need to Run Successful Events</h2>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" itemscope itemtype="https://schema.org/Service">
                     <div class="feature-icon">🔢</div>
-                    <h3 data-i18n="features.liveCounter.title">Watch Registrations Roll In Live</h3>
-                    <p data-i18n="features.liveCounter.description">See exactly how many people are signing up in real-time—no more manual counting or spreadsheet updates.</p>
+                    <h3 data-i18n="features.liveCounter.title" itemprop="name">Watch Registrations Roll In Live</h3>
+                    <p data-i18n="features.liveCounter.description" itemprop="description">See exactly how many people are signing up in real-time—no more manual counting or spreadsheet updates.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" itemscope itemtype="https://schema.org/Service">
                     <div class="feature-icon">📊</div>
-                    <h3 data-i18n="features.organizerDashboard.title">Your Event Command Center</h3>
-                    <p data-i18n="features.organizerDashboard.description">Private dashboard with all the insights you need: age groups, attendance trends, and progress toward your goals at a glance.</p>
+                    <h3 data-i18n="features.organizerDashboard.title" itemprop="name">Your Event Command Center</h3>
+                    <p data-i18n="features.organizerDashboard.description" itemprop="description">Private dashboard with all the insights you need: age groups, attendance trends, and progress toward your goals at a glance.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" itemscope itemtype="https://schema.org/Service">
                     <div class="feature-icon">🔄</div>
-                    <h3 data-i18n="features.automaticSync.title">Works with Your Existing Forms</h3>
-                    <p data-i18n="features.automaticSync.description">Seamlessly connects to your current Google Forms—keep your registration process, gain powerful insights.</p>
+                    <h3 data-i18n="features.automaticSync.title" itemprop="name">Works with Your Existing Forms</h3>
+                    <p data-i18n="features.automaticSync.description" itemprop="description">Seamlessly connects to your current Google Forms—keep your registration process, gain powerful insights.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" itemscope itemtype="https://schema.org/Service">
                     <div class="feature-icon">🎯</div>
-                    <h3 data-i18n="features.goalTracking.title">Hit Your Attendance Targets</h3>
-                    <p data-i18n="features.goalTracking.description">Set participant goals and track progress with visual indicators that motivate your team.</p>
+                    <h3 data-i18n="features.goalTracking.title" itemprop="name">Hit Your Attendance Targets</h3>
+                    <p data-i18n="features.goalTracking.description" itemprop="description">Set participant goals and track progress with visual indicators that motivate your team.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" itemscope itemtype="https://schema.org/Service">
                     <div class="feature-icon">👥</div>
-                    <h3 data-i18n="features.demographics.title">Understand Your Audience</h3>
-                    <p data-i18n="features.demographics.description">Automatically calculated insights about your attendees' demographics and preferences.</p>
+                    <h3 data-i18n="features.demographics.title" itemprop="name">Understand Your Audience</h3>
+                    <p data-i18n="features.demographics.description" itemprop="description">Automatically calculated insights about your attendees' demographics and preferences.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" itemscope itemtype="https://schema.org/Service">
                     <div class="feature-icon">📱</div>
-                    <h3 data-i18n="features.mobileReady.title">Manage Events On-the-Go</h3>
-                    <p data-i18n="features.mobileReady.description">Access your dashboard from any device—check registrations from your phone during event setup.</p>
+                    <h3 data-i18n="features.mobileReady.title" itemprop="name">Manage Events On-the-Go</h3>
+                    <p data-i18n="features.mobileReady.description" itemprop="description">Access your dashboard from any device—check registrations from your phone during event setup.</p>
                 </div>
             </div>
         </div>
@@ -168,20 +262,20 @@
         <div class="container">
             <h2 class="section-title" data-i18n="process.title">Get Your Live Dashboard in 3 Simple Steps</h2>
             <div class="process-steps">
-                <div class="step">
+                <div class="step" itemscope itemtype="https://schema.org/HowToStep">
                     <div class="step-number">1</div>
-                    <h3 data-i18n="process.step1.title">Share Your Google Form Link</h3>
-                    <p data-i18n="process.step1.description">Send us your existing form—or we'll help you create the perfect one in minutes.</p>
+                    <h3 data-i18n="process.step1.title" itemprop="name">Share Your Google Form Link</h3>
+                    <p data-i18n="process.step1.description" itemprop="text">Send us your existing form—or we'll help you create the perfect one in minutes.</p>
                 </div>
-                <div class="step">
+                <div class="step" itemscope itemtype="https://schema.org/HowToStep">
                     <div class="step-number">2</div>
-                    <h3 data-i18n="process.step2.title">We Build Your Custom Dashboard</h3>
-                    <p data-i18n="process.step2.description">We connect your form and deliver a fully functional dashboard within 24-48 hours.</p>
+                    <h3 data-i18n="process.step2.title" itemprop="name">We Build Your Custom Dashboard</h3>
+                    <p data-i18n="process.step2.description" itemprop="text">We connect your form and deliver a fully functional dashboard within 24-48 hours.</p>
                 </div>
-                <div class="step">
+                <div class="step" itemscope itemtype="https://schema.org/HowToStep">
                     <div class="step-number">3</div>
-                    <h3 data-i18n="process.step3.title">Launch & Watch Registrations Grow</h3>
-                    <p data-i18n="process.step3.description">Share your event and watch registrations come in live—no technical skills needed!</p>
+                    <h3 data-i18n="process.step3.title" itemprop="name">Launch & Watch Registrations Grow</h3>
+                    <p data-i18n="process.step3.description" itemprop="text">Share your event and watch registrations come in live—no technical skills needed!</p>
                 </div>
             </div>
             
@@ -218,13 +312,13 @@
         <div class="container">
             <h2 class="section-title" data-i18n="pricing.title">Simple Pricing, Powerful Results</h2>
             <div class="pricing-grid">
-                <div class="pricing-card featured">
+                <div class="pricing-card featured" itemscope itemtype="https://schema.org/Offer">
                     <div class="pricing-badge" data-i18n="pricing.mostPopular">Most Popular - Best Value</div>
-                    <h3 data-i18n="pricing.singleEvent.title">Perfect Event Package</h3>
-                    <div class="price">€90</div>
-                    <p class="price-description" data-i18n="pricing.singleEvent.description">Everything you need for one successful event</p>
+                    <h3 data-i18n="pricing.singleEvent.title" itemprop="name">Perfect Event Package</h3>
+                    <div class="price" itemprop="price" content="90">€90</div>
+                    <p class="price-description" data-i18n="pricing.singleEvent.description" itemprop="description">Everything you need for one successful event</p>
                     
-                    <ul class="features-list">
+                    <ul class="features-list" itemprop="description">
                         <li data-i18n="pricing.singleEvent.features.0">Live registration counter widget</li>
                         <li data-i18n="pricing.singleEvent.features.1">Organizer dashboard with real-time data</li>
                         <li data-i18n="pricing.singleEvent.features.2">Automatic Google Forms integration</li>
@@ -236,12 +330,12 @@
                     <a href="#contact" class="btn btn-primary" data-i18n="pricing.cta">Start My Dashboard</a>
                 </div>
 
-                <div class="pricing-card">
-                    <h3 data-i18n="pricing.ongoing.title">Growth Package</h3>
-                    <div class="price">€490</div>
-                    <p class="price-description" data-i18n="pricing.ongoing.description">For organizations running multiple events</p>
+                <div class="pricing-card" itemscope itemtype="https://schema.org/Offer">
+                    <h3 data-i18n="pricing.ongoing.title" itemprop="name">Growth Package</h3>
+                    <div class="price" itemprop="price" content="490">€490</div>
+                    <p class="price-description" data-i18n="pricing.ongoing.description" itemprop="description">For organizations running multiple events</p>
                     
-                    <ul class="features-list">
+                    <ul class="features-list" itemprop="description">
                         <li data-i18n="pricing.ongoing.features.0">Everything in Perfect Event package</li>
                         <li data-i18n="pricing.ongoing.features.1">Unlimited events management</li>
                         <li data-i18n="pricing.ongoing.features.2">Custom branding & white-label options</li>
@@ -330,30 +424,30 @@
                         </div>
                         
                         <div class="contact-form">
-                            <form id="event-lead-form" action="https://formspree.io/f/mgvndjvo" method="POST">
+                            <form id="event-lead-form" action="https://formspree.io/f/mgvndjvo" method="POST" itemscope itemtype="https://schema.org/ContactPage">
                                 <div class="form-group">
                                     <label for="name" data-i18n="contact.form.name">Name *</label>
-                                    <input type="text" id="name" name="name" required>
+                                    <input type="text" id="name" name="name" required itemprop="name">
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="email" data-i18n="contact.form.email">Email *</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="email" id="email" name="email" required itemprop="email">
                                 </div>
     
                                 <div class="form-group">
                                     <label for="phone" data-i18n="contact.form.phone">Phone Number (Optional)</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="+33 1 23 45 67 89">
+                                    <input type="tel" id="phone" name="phone" placeholder="+33 1 23 45 67 89" itemprop="telephone">
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="organization" data-i18n="contact.form.organization">Organization/Club</label>
-                                    <input type="text" id="organization" name="organization" placeholder="Your organization name" data-i18n-placeholder="contact.form.organizationPlaceholder">
+                                    <input type="text" id="organization" name="organization" placeholder="Your organization name" data-i18n-placeholder="contact.form.organizationPlaceholder" itemprop="affiliation">
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="event-type" data-i18n="contact.form.eventType">Event Type</label>
-                                    <select id="event-type" name="event-type">
+                                    <select id="event-type" name="event-type" itemprop="category">
                                         <option value="" data-i18n="contact.form.selectOption">Select an option</option>
                                         <option value="sports" data-i18n="contact.form.sportsEvent">Sports Tournament/Event</option>
                                         <option value="school" data-i18n="contact.form.schoolEvent">School/University Event</option>
@@ -365,7 +459,7 @@
                                 
                                 <div class="form-group">
                                     <label for="message" data-i18n="contact.form.message">Tell us about your event *</label>
-                                    <textarea id="message" name="message" rows="4" required data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
+                                    <textarea id="message" name="message" rows="4" required data-i18n-placeholder="contact.form.messagePlaceholder" itemprop="description"></textarea>
                                 </div>
                                 
                                 <!-- Add-ons guidance -->
@@ -451,18 +545,18 @@
     <section class="faq">
         <div class="container">
             <h2 class="section-title" data-i18n="faq.title">Common Questions from Event Organizers</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3 data-i18n="faq.q1">Will this disrupt my current registration process?</h3>
-                    <p data-i18n="faq.a1">Not at all! We integrate seamlessly with your existing Google Form. Your participants continue registering exactly as they do now—you just get powerful new insights.</p>
+            <div class="faq-grid" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+                    <h3 data-i18n="faq.q1" itemprop="name">Will this disrupt my current registration process?</h3>
+                    <p data-i18n="faq.a1" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Not at all! We integrate seamlessly with your existing Google Form. Your participants continue registering exactly as they do now—you just get powerful new insights.</span></p>
                 </div>
-                <div class="faq-item">
-                    <h3 data-i18n="faq.q2">How quickly can I start seeing live registrations?</h3>
-                    <p data-i18n="faq.a2">Most clients have their dashboard live within 24-48 hours after sharing their Google Form link.</p>
+                <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+                    <h3 data-i18n="faq.q2" itemprop="name">How quickly can I start seeing live registrations?</h3>
+                    <p data-i18n="faq.a2" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Most clients have their dashboard live within 24-48 hours after sharing their Google Form link.</span></p>
                 </div>
-                <div class="faq-item">
-                    <h3 data-i18n="faq.q3">Do I need technical skills to use this?</h3>
-                    <p data-i18n="faq.a3">None whatsoever! We handle all the technical setup. You just share your form link and start monitoring registrations.</p>
+                <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+                    <h3 data-i18n="faq.q3" itemprop="name">Do I need technical skills to use this?</h3>
+                    <p data-i18n="faq.a3" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">None whatsoever! We handle all the technical setup. You just share your form link and start monitoring registrations.</span></p>
                 </div>
             </div>
         </div>
@@ -476,18 +570,18 @@
                 <h4 id="businesses-title" class="footer-section-title" data-i18n="footer.businesses.title">Discover Our Ecosystem</h4>
                 <div class="businesses-grid" role="list" aria-label="Our business portfolio">
                     
-                    <div class="business-card" role="listitem">
+                    <div class="business-card" role="listitem" itemscope itemtype="https://schema.org/Organization">
                         <div class="business-icon">🤖</div>
-                        <h5 data-i18n="footer.businesses.ai.title">AI Solutions</h5>
-                        <p data-i18n="footer.businesses.ai.description">Practical AI automation for your business</p>
-                        <a href="https://izutech.fr/" target="_blank" rel="noopener" class="business-link" data-i18n="footer.businesses.cta">Explore →</a>
+                        <h5 data-i18n="footer.businesses.ai.title" itemprop="name">AI Solutions</h5>
+                        <p data-i18n="footer.businesses.ai.description" itemprop="description">Practical AI automation for your business</p>
+                        <a href="https://izutech.fr/" target="_blank" rel="noopener" class="business-link" data-i18n="footer.businesses.cta" itemprop="url">Explore →</a>
                     </div>
                     
-                    <div class="business-card" role="listitem">
+                    <div class="business-card" role="listitem" itemscope itemtype="https://schema.org/Organization">
                         <div class="business-icon">🌐</div>
-                        <h5 data-i18n="footer.businesses.web.title">Professional Websites</h5>
-                        <p data-i18n="footer.businesses.web.description">Custom digital solutions for SMBs</p>
-                        <a href="https://web.izutech.fr/" target="_blank" rel="noopener" class="business-link" data-i18n="footer.businesses.cta">Explore →</a>
+                        <h5 data-i18n="footer.businesses.web.title" itemprop="name">Professional Websites</h5>
+                        <p data-i18n="footer.businesses.web.description" itemprop="description">Custom digital solutions for SMBs</p>
+                        <a href="https://web.izutech.fr/" target="_blank" rel="noopener" class="business-link" data-i18n="footer.businesses.cta" itemprop="url">Explore →</a>
                     </div>
                 </div>
             </div>
@@ -496,7 +590,7 @@
             <div class="footer-brand-centered">
                 <div class="container">
                     <div class="footer-logo">
-                        <img src="photo/IzuTech-logo.png" alt="IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking" width="120" height="30" itemprop="logo">
+                        <img src="photo/IzuTech-logo.png" alt="IzuTech Events - Live Event Dashboards & Real-time Attendee Tracking" width="120" height="30" itemprop="logo" loading="lazy">
                     </div>
                     <p class="footer-tagline" data-i18n="footer.tagline">Accelerating Business Digital Transformation with AI</p>
                     <div class="footer-legal">
@@ -508,6 +602,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
