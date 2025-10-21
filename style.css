@@ -58,6 +58,7 @@ body {
     z-index: 10000;
     text-decoration: none;
     border-radius: 0 0 4px 0;
+    font-weight: 600;
 }
 
 .skip-link:focus {
@@ -429,8 +430,7 @@ h2 {
 }
 
 /* Trust indicators for Calendly links */
-
-trust-indicators {
+.trust-indicators {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -1363,7 +1363,7 @@ trust-indicators {
         font-size: 0.8rem;
     }
     
-    .calendly-trust {
+    .trust-indicators {
         gap: 0.5rem;
         font-size: 0.8rem;
     }
@@ -1511,7 +1511,7 @@ trust-indicators {
         justify-content: center;
     }
     
-    .calendly-trust {
+    .trust-indicators {
         flex-direction: column;
         gap: 0.25rem;
     }
@@ -1699,4 +1699,32 @@ select:focus-visible,
         --light-border: #2D3748;
         --light-hover: #2D3748;
     }
+}
+
+/* Performance optimizations */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Content visibility for performance */
+.content-visibility-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 500px;
+}
+
+/* Reduce layout shifts */
+.aspect-ratio-box {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.aspect-ratio-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
