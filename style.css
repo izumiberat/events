@@ -1382,8 +1382,26 @@ h2 {
     }
     
     .pricing-card.featured {
-        transform: none;
+        margin-top: 20px;
+        position: relative;
     }
+
+    .pricing-badge {
+        position: absolute;
+        top: -10px; /* Reduced from -12px to prevent cutting off */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2; /* Ensure it stays above other elements */
+        white-space: nowrap;
+        font-size: 0.8rem; /* Slightly smaller on mobile */
+        padding: 4px 12px;
+    }
+    
+    /* Ensure the pricing grid has enough spacing */
+    .pricing-grid {
+        gap: 2.5rem;
+    }
+}
     
     .contact-grid {
         grid-template-columns: 1fr;
@@ -1528,6 +1546,16 @@ h2 {
     .trust-points-mobile {
         grid-template-columns: 1fr;
     }
+    .pricing-badge {
+    top: -8px;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    }
+    
+    .pricing-card.featured {
+        margin-top: 16px;
+    }
+
 }
 
 /* ===== Accessibility & Performance ===== */
