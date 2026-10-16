@@ -78,7 +78,8 @@
 
     "contact.title": "Planning an event?",
     "contact.lead": "Tell me what it is, the date, and what you’d like to follow. I’ll reply within one working day.",
-    "contact.or": "Would you rather talk it through? Say so in your message and I’ll suggest a time for a call.",
+    "contact.or": "Would you rather talk it through?",
+    "contact.call": "Book a 30-minute call",
     "contact.mail": "By email:",
 
     "form.name": "Your name",
