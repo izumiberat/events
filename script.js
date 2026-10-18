@@ -47,7 +47,7 @@
     "example.title": "A real example: Halloween in Carla-Bayle",
     "example.p1": "For its Halloween party in the village, the Coq Carlanais basketball club took family sign-ups through a Google Form.",
     "example.p2": "On the club’s website, a counter showed the number of sign-ups live, split into adults and children. The organisers had their own dashboard, with the number of families and children by age group, to plan sweets, activities and supervision.",
-    "example.note": "The club’s website is no longer online.",
+    "example.note": "The club’s website: <a href=\"https://coqcarlanais.fr/\" target=\"_blank\" rel=\"noopener\">coqcarlanais.fr</a>",
 
     "pricing.title": "Pricing",
     "pricing.lead": "A fixed price, no subscription. The form and the responses remain yours.",
