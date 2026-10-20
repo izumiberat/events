@@ -14,7 +14,7 @@
 
     "hero.kicker": "For clubs, associations, schools and companies that run events.",
     "hero.title": "Follow your sign-ups live.",
-    "hero.lead": "You keep your Google Form. I connect it to a sign-up counter that updates itself on your website, and to a dashboard for the organisers. No more opening the spreadsheet to see where you stand.",
+    "hero.lead": "You keep your Google Form. I connect it to a sign-up counter that updates itself on your website, and to a dashboard for the organisers. No more opening the spreadsheet to see where you stand, and more time to enjoy the event you’re organising.",
     "hero.cta": "Get a free quote",
     "hero.secondary": "See a real example",
     "hero.note": "€90 per event. Set up in 2 working days.",
